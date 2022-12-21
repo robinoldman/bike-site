@@ -1,1 +1,13 @@
-body {background-color: aqua;}
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {background-color: brown;
+font-family: 'Indie Flower', 'Arial Narrow', Arial, sans-serif;
+align-items: center;
+justify-content: center;
+margin: 0;
+overflow: hidden;
+
+}
+
+.hangcontainer { } 
