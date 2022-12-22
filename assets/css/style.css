@@ -1,27 +1,66 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
-body {background-color: brown;
+body {
 font-family: 'Indie Flower', 'Arial Narrow', Arial, sans-serif;
-align-items: center;
-justify-content: center;
-margin: 0;
-overflow: hidden;
-text-align: center;
+
+background-image: url(../images/web-background.jpg);
+position: relative;  
+z-index: -1; 
 
 }
 .letters-container{
-    padding left: 300px;
-    padding right: 300px;
+    margin-left: 300px;
+    margin-right: 300px;
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-gap: 5px;
-    overflow: hidden;
+    grid-template-columns: repeat(13, 1fr);
+    grid-gap: 4px;
+    align-items: center;
+justify-content: center;
+margin: 0;
+
+text-align: center;
+
 }
+
+.game-container {
+   
+    text-align: center;
+    background-color: white;
+    padding: 5%;
+    width: 40%;  
+    height: 50%; 
+    margin: auto; 
+    margin-top: 6rem;
+    border-radius: 5px;
+    
+}
+   
+.spider-container
+{background-image: url(../images/spider1.png);
+height: 5rem;
+width: 40rem;
+background-repeat: no-repeat;
+text-align: center;
+padding: 3%;}
+
+.score-container
+{font-size: 150%;
+    margin-top: 3%;
+
+}
+
 
 .key {
     width: 50px;
-    height: 50px;
+    height: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 150%;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;
 }
 
 .hangcontainer { } 
