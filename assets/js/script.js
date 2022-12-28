@@ -19,92 +19,87 @@ document.getElementById('maximimumMistake').innerHTML = maximimumMistake
 
 
 //keyboard click to be registered
-//document.getElementById("keya").addEventListener("click", function() {
-//  console.log("Button A was clicked!");
-//});
+
 
 const buttona =document.getElementById("keya");
-function buttonClicked () {alert("button A clicked!"); } buttona.addEventListener('click', buttonClicked) ;
+function buttonAClicked () {alert("button A clicked!"); } buttona.addEventListener('click', buttonAClicked) ;
 
 const buttonb =document.getElementById("keyb");
-function buttonClicked () {alert("button B clicked!"); } buttonb.addEventListener('click', buttonClicked);
+function buttonBClicked () {alert("button B clicked!"); } buttonb.addEventListener('click', buttonBClicked);
 
 const buttonc =document.getElementById("keyc");
-function buttonClicked () {alert("button C clicked!"); } buttonc.addEventListener('click', buttonClicked) ;
+function buttonCClicked () {alert("button C clicked!"); } buttonc.addEventListener('click', buttonCClicked) ;
      
 const buttond =document.getElementById("keyd");
-function buttonClicked () {alert("button d clicked!"); } buttond.addEventListener('click', buttonClicked) ;
+function buttonDClicked () {alert("button d clicked!"); } buttond.addEventListener('click', buttonDClicked) ;
 
 const buttone =document.getElementById("keye");
-function buttonClicked () {alert("button e clicked!"); } buttone.addEventListener('click', buttonClicked) ;
+function buttonEClicked () {alert("button e clicked!"); } buttone.addEventListener('click', buttonEClicked) ;
 
 const buttonf =document.getElementById("keyf");
-function buttonClicked () {alert("button f clicked!"); } buttonf.addEventListener('click', buttonClicked) ;
+function buttonFClicked () {alert("button f clicked!"); } buttonf.addEventListener('click', buttonFClicked) ;
 
 const buttong =document.getElementById("keyg");
-function buttonClicked () {alert("button g clicked!"); } buttong.addEventListener('click', buttonClicked) ;
+function buttonGClicked () {alert("button g clicked!"); } buttong.addEventListener('click', buttonGClicked) ;
 
 const buttonh =document.getElementById("keyh");
-function buttonClicked () {alert("button h clicked!"); } buttonh.addEventListener('click', buttonClicked) ;
+function buttonHClicked () {alert("button h clicked!"); } buttonh.addEventListener('click', buttonHClicked) ;
 
 const buttoni =document.getElementById("keyi");
-function buttonClicked () {alert("button i clicked!"); } buttoni.addEventListener('click', buttonClicked) ;
+function buttonIClicked () {alert("button i clicked!"); } buttoni.addEventListener('click', buttonIClicked) ;
 
 const buttonj =document.getElementById("keyj");
-function buttonClicked () {alert("button j clicked!"); } buttonj.addEventListener('click', buttonClicked) ;
+function buttonJClicked () {alert("button j clicked!"); } buttonj.addEventListener('click', buttonJClicked) ;
 
 const buttonk =document.getElementById("keyk");
-function buttonClicked () {alert("button k clicked!"); } buttonk.addEventListener('click', buttonClicked) ;
+function buttonKClicked () {alert("button k clicked!"); } buttonk.addEventListener('click', buttonKClicked) ;
 
 const buttonl =document.getElementById("keyl");
-function buttonClicked () {alert("button l clicked!"); } buttonl.addEventListener('click', buttonClicked) ;
+function buttonLClicked () {alert("button l clicked!"); } buttonl.addEventListener('click', buttonLClicked) ;
 
 const buttonm =document.getElementById("keym");
-function buttonClicked () {alert("button m clicked!"); } buttonm.addEventListener('click', buttonClicked) ;
+function buttonMClicked () {alert("button m clicked!"); } buttonm.addEventListener('click', buttonMClicked) ;
 
 const buttonn =document.getElementById("keyn");
-function buttonClicked () {alert("button n clicked!"); } buttonn.addEventListener('click', buttonClicked) ;
+function buttonNClicked () {alert("button n clicked!"); } buttonn.addEventListener('click', buttonNClicked) ;
 
 const buttono =document.getElementById("keyo");
-function buttonClicked () {alert("button o clicked!"); } buttono.addEventListener('click', buttonClicked) ;
+function buttonOClicked () {alert("button o clicked!"); } buttono.addEventListener('click', buttonOClicked) ;
 
 const buttonp =document.getElementById("keyp");
-function buttonClicked () {alert("button p clicked!"); } buttonp.addEventListener('click', buttonClicked) ;
+function buttonPClicked () {alert("button p clicked!"); } buttonp.addEventListener('click', buttonPClicked) ;
 
 const buttonq =document.getElementById("keyq");
-function buttonClicked () {alert("button q clicked!"); } buttonq.addEventListener('click', buttonClicked) ;
+function buttonQClicked () {alert("button q clicked!"); } buttonq.addEventListener('click', buttonQClicked) ;
 
 const buttonr =document.getElementById("keyr");
-function buttonClicked () {alert("button r clicked!"); } buttonr.addEventListener('click', buttonClicked) ;
+function buttonRClicked () {alert("button r clicked!"); } buttonr.addEventListener('click', buttonRClicked) ;
 
 const buttons =document.getElementById("keys");
-function buttonClicked () {alert("button s clicked!"); } buttons.addEventListener('click', buttonClicked) ;
+function buttonSClicked () {alert("button s clicked!"); } buttons.addEventListener('click', buttonSClicked) ;
 
 const buttont =document.getElementById("keyt");
-function buttonClicked () {alert("button t clicked!"); } buttont.addEventListener('click', buttonClicked) ;
+function buttonTClicked () {alert("button t clicked!"); } buttont.addEventListener('click', buttonTClicked) ;
 
 const buttonu =document.getElementById("keyu");
-function buttonClicked () {alert("button u clicked!"); } buttonu.addEventListener('click', buttonClicked) ;
+function buttonUClicked () {alert("button u clicked!"); } buttonu.addEventListener('click', buttonUClicked) ;
 
 const buttonv =document.getElementById("keyv");
-function buttonClicked () {alert("button v clicked!"); } buttonv.addEventListener('click', buttonClicked) ;
+function buttonVClicked () {alert("button v clicked!"); } buttonv.addEventListener('click', buttonVClicked) ;
 
 const buttonw =document.getElementById("keyw");
-function buttonClicked () {alert("button w clicked!"); } buttonw.addEventListener('click', buttonClicked) ;
+function buttonWClicked () {alert("button w clicked!"); } buttonw.addEventListener('click', buttonWClicked) ;
 
 const buttonx =document.getElementById("keyx");
-function buttonClicked () {alert("button x clicked!"); } buttonx.addEventListener('click', buttonClicked) ;
+function buttonXClicked () {alert("button x clicked!"); } buttonx.addEventListener('click', buttonXClicked) ;
 
 const buttony =document.getElementById("keyy");
-function buttonClicked () {alert("button y clicked!"); } buttony.addEventListener('click', buttonClicked) ;
+function buttonYClicked () {alert("button y clicked!"); } buttony.addEventListener('click', buttonYClicked) ;
 
-const buttonz =document.getElementById("keys");
-function buttonClicked () {alert("button z clicked!"); } buttonz.addEventListener('click', buttonClicked) ;
+const buttonz =document.getElementById("keyz");
+function buttonZClicked () {alert("button z clicked!"); } buttonz.addEventListener('click', buttonZClicked) ;
 //main game 
 
-//while (letterLeft > 0 ) {
-
-  //var guess = prompt 
 
 
 
