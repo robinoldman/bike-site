@@ -1,11 +1,26 @@
 var guess = ['banana', 'apple', 'orange', 'satsuma', 'grape'];
-
+// selects random word
 var randomGuess = Math.floor(Math.random() * guess.length);
-
+//brings up _ _ _ for random guess
 var answerArray = [];
-for (var i = 0; i < word.length; i++) {
-    answerArray[i] = "_"
-}
+for (var i = 0; i < guess[randomGuess].length; i++) {
+    answerArray[i] = "_"}
+
+
+var letterLeft = guess[randomGuess].length;
+document.getElementsByClassName("clue-container")[0].innerHTML = answerArray;
+
+
+console.log (answerArray);
+console.log(guess[randomGuess]);
+//main game 
+
+//while (lettersLeft > 0 ) {
+//alert(answerArray.join(' '));
+
+//}
+
+
 
 //for (var i = 0; i < guess[randomGuess].length; i++) {
    // if (playerGuesses.contains(guess[randomGuess].charAt(i))) {
@@ -17,7 +32,7 @@ for (var i = 0; i < word.length; i++) {
 //}
 
 //console.log(answerArray);
-console.log(guess[randomGuess]);
+
 
 
 //let mamimumMistake = 6; 
