@@ -9,6 +9,13 @@ for (var i = 0; i < guess[randomGuess].length; i++) {
     answerArray[i] = " _ ";
 }
 
+//refresh button 
+const refreshButton = document.getElementById('refresh-button');
+refreshButton.addEventListener('click', function() {
+  location.reload();
+});
+location.reload(true);
+
 console.log(answerArray);
 console.log(guess[randomGuess]);
 
