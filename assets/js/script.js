@@ -8,6 +8,8 @@ var answerArray = [];
 for (var i = 0; i < guess[randomGuess].length; i++) {
     answerArray[i] = " _ "}
 
+console.log (answerArray);
+console.log (guess[randomGuess])
 
 var letterLeft = guess[randomGuess].length;
 document.getElementsByClassName("clue-container")[0].innerHTML = answerArray;
