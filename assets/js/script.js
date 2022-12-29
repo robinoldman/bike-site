@@ -14,7 +14,7 @@ const refreshButton = document.getElementById('refresh-button');
 refreshButton.addEventListener('click', function() {
   location.reload();
 });
-location.reload(true);
+
 
 console.log(answerArray);
 console.log(guess[randomGuess]);
