@@ -25,6 +25,9 @@ document.getElementsByClassName("clue-container")[0].innerHTML = answerArray;
 //wrong guess score card
 var maximimumMistake = 6;
 document.getElementById('maximimumMistake').innerHTML = maximimumMistake;
+var mistakes = 0;
+document.getElementById('mistakes').innerHTML = parseInt(document.getElementById('mistakes').innerHTML) + 1; //need to look into why it is not updating 
+
 
 //keys to change letters being pressed
 function guess_letter(letter) {
