@@ -36,10 +36,10 @@ text-align: center;
     
 }
    
-.spider-container
-{background-image: url(../images/spider1.png);
-height: 5rem;
-width: 40rem;
+img
+{
+height: 4rem;
+width: 20rem;
 background-repeat: no-repeat;
 text-align: center;
 padding: 3%;}

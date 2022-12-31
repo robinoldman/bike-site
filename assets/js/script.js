@@ -16,6 +16,7 @@ refreshButton.addEventListener('click', function() {
 });
 
 
+
 console.log(answerArray);
 console.log(guess[randomGuess]);
 
@@ -39,6 +40,34 @@ function guess_letter(letter) {
   }
   // Update the clue-container element to show the updated answerArray
   document.getElementsByClassName("clue-container")[0].innerHTML = answerArray;
+}
+
+//update the picture with a wrong guess
+function guess_letter(letter) {
+  let isCorrect = false; // Flag to track if the letter is correct
+
+  for (let i = 0; i < answerArray.length; i++) {
+    if (guess[randomGuess][i] === letter) {
+      // Update the answerArray to replace the dash with the correct letter
+      answerArray[i] = letter;
+      isCorrect = true;
+    }
+  }
+
+  // Update the clue-container element to show the updated answerArray
+  let hangman = document.getElementById("hangman"); // Reference to the hangman image element
+  let hangmanImages = ["assets/images/spider2.png", "assets/images/spider3.png", "assets/images/spider4.png", "assets/images/spider5.png"]; // Array of hangman images
+  let index = 0; // Current index in the hangmanImages array
+
+  document.getElementsByClassName("clue-container")[0].innerHTML = answerArray;
+
+  if (!isCorrect) {
+    // Letter is not correct, so update the hangman image
+    hangman.src = hangmanImages[index];
+    index++; 
+    // Move to the next image in the array
+  }
+
 }
 
 //keyboard click to be registered
