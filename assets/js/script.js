@@ -3,6 +3,9 @@ var guess = ['banana', 'apple', 'orange', 'satsuma', 'grape'];
 // selects random word
 var randomGuess = Math.floor(Math.random() * guess.length);
 
+
+
+
 //brings up _ _ _ for random guess
 var answerArray = [];
 for (var i = 0; i < guess[randomGuess].length; i++) {
@@ -14,51 +17,63 @@ const refreshButton = document.getElementById('refresh-button');
 refreshButton.addEventListener('click', function() {
   location.reload();
 });
-
+var letterLeft = guess[randomGuess].length;
+document.getElementsByClassName("clue-container")[0].innerHTML = answerArray;
 
 
 console.log(answerArray);
 console.log(guess[randomGuess]);
 
-var letterLeft = guess[randomGuess].length;
-document.getElementsByClassName("clue-container")[0].innerHTML = answerArray;
+//recognise when all letters have been done
 
-//wrong guess score card
+
+
+//wrong guess score card // does not work
 var maximimumMistake = 6;
 document.getElementById('maximimumMistake').innerHTML = maximimumMistake;
 var mistakes = 0;
-document.getElementById('mistakes').innerHTML = parseInt(document.getElementById('mistakes').innerHTML) + 1; //need to look into why it is not updating 
+document.getElementById('mistakes').innerHTML = parseInt(document.getElementById('mistakes').innerHTML); //need to look into why it is not updating 
 
 
-//keys to change letters being pressed
+//checks to see length of word and compares it to the one completed 
+
+function letterGuessed(letter) {
+  // ... code to update the answerArray and check if the letter is correct // does not work
+
+  if (guess[randomGuess].every(letter => letter !== ' _ ')) {
+    console.log('All letters have been guessed!');
+  }}
+
+
+
+//keys to change letters being pressed on screen
 function guess_letter(letter) {
   for (let i = 0; i < answerArray.length; i++) {
     if (guess[randomGuess][i] === letter) {
-      // Update the answerArray to replace the dash with the correct letter
+      
       answerArray[i] = letter;
     }
   }
-  // Update the clue-container element to show the updated answerArray
-  document.getElementsByClassName("clue-container")[0].innerHTML = answerArray;
 }
 
 //update the picture with a wrong guess
 function guess_letter(letter) {
-  let isCorrect = false; // Flag to track if the letter is correct
+  let isCorrect = false; 
 
   for (let i = 0; i < answerArray.length; i++) {
     if (guess[randomGuess][i] === letter) {
-      // Update the answerArray to replace the dash with the correct letter
+
+      
+// Update the answerArray to replace the dash with the correct letter
       answerArray[i] = letter;
       isCorrect = true;
     }
   }
 
-  // Update the clue-container element to show the updated answerArray
-  let hangman = document.getElementById("hangman"); // Reference to the hangman image element
+  // Show the new picture if wrong answer
+  let hangman = document.getElementById("hangman"); 
   let hangmanImages = ["assets/images/spider2.png", "assets/images/spider3.png", "assets/images/spider4.png", "assets/images/spider5.png"]; // Array of hangman images
-  let index = 0; // Current index in the hangmanImages array
-
+  let index = 0; 
   document.getElementsByClassName("clue-container")[0].innerHTML = answerArray;
 
   if (!isCorrect) {
@@ -67,8 +82,13 @@ function guess_letter(letter) {
     index++; 
     // Move to the next image in the array
   }
-
 }
+
+// score card 
+
+
+
+
 
 //keyboard click to be registered
 document.getElementById("keya").onclick = function() { guess_letter("a"); };
