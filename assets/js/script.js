@@ -12,11 +12,13 @@ for (var i = 0; i < guess[randomGuess].length; i++) {
     answerArray[i] = " _ ";
 }
 
-//refresh button 
+//refresh button // resets to 0 but then goes back to orginal score 
 const refreshButton = document.getElementById('refresh-button');
 refreshButton.addEventListener('click', function() {
+  reset();
   location.reload();
 });
+
 var letterLeft = guess[randomGuess].length;
 document.getElementsByClassName("clue-container")[0].innerHTML = answerArray;
 
@@ -25,15 +27,6 @@ console.log(answerArray);
 console.log(guess[randomGuess]);
 
 //recognise when all letters have been done
-
-
-
-//wrong guess score card // does not work
-var maximimumMistake = 6;
-document.getElementById('maximimumMistake').innerHTML = maximimumMistake;
-var mistakes = 0;
-document.getElementById('mistakes').innerHTML = parseInt(document.getElementById('mistakes').innerHTML); //need to look into why it is not updating 
-
 
 
 
@@ -50,12 +43,7 @@ function guessLetter(letter) {
 
 //score element 
 let scoreElement = document.getElementById('score');
-
-
-// Get the current score from localStorage
 let score = parseInt(localStorage.getItem('score')) || 0;
-
-// Update the score element with the current score
 scoreElement.innerHTML = score;
 
 //checks to see length of word and compares it to the one completed 
@@ -74,7 +62,6 @@ function checkGuesses() {
     console.log('All the letters have been guessed');
     alert('You have won');
     window.location.reload();
-
     score++;
     localStorage.setItem('score', score);
     scoreElement.innerHTML = score;
@@ -111,6 +98,15 @@ function guess_letter(letter) {
     index++; 
     // is only updating 1 image to the array  is not recognisiong the ++ console log says 
   }
+}
+
+//resets the game ready for a fresh start
+
+function reset() {
+  score= 0;
+  localStorage.setItem('score', 0);
+  document.getElementById('score').innerHTML = 0;
+
 }
 
 const buttons = document.querySelectorAll('.key');

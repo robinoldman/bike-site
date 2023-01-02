@@ -4,7 +4,7 @@
 body {
 font-family: 'Indie Flower', 'Arial Narrow', Arial, sans-serif;
 
-background-image: url(../images/web-background.jpg);
+background-image: url(../images/mountain3.jpg);
 position: relative;  
 z-index: -1; 
 
@@ -30,12 +30,13 @@ text-align: center;
    
     text-align: center;
     background-color: white;
+    opacity: 5;
     padding: 5%;
     width: 40%;  
     height: 50%; 
     margin: auto; 
     margin-top: 6rem;
-    border-radius: 1%;
+    border-radius: 5px;
     
 }
    
@@ -50,15 +51,26 @@ padding: 3%;}
 .score-container
 {font-size: 150%;
     margin-top: 3%;
+    margin: 2%;
 
 }
 
+.reset-key {
+    width: 25%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100%;
+    background-color: lightskyblue;
+    margin: 2%;
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;
+}
 
 .key {
-    width: 2rem;
-    height: 1.5rem;
+    width: 100%;
+    height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+    font-size: 100%;
     background-color: lightskyblue;
     
     border: none;  
@@ -67,8 +79,8 @@ padding: 3%;}
 }
 
 .keypressed {
-    width: 2rem;
-    height: 1.5rem;
+    width: 100%;
+    height: 100%;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 background-color: rgb(185, 207, 255);
