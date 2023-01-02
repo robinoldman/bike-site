@@ -1,4 +1,4 @@
-var guess = ['banana', 'apple', 'orange', 'satsuma', 'grape'];
+var guess = ['everest', 'bennevis', 'montblanc', 'matterhorn', 'snowdon', 'mountfuji', 'kilimanjaro', 'elcapitan'];
 
 // selects random word
 var randomGuess = Math.floor(Math.random() * guess.length);
