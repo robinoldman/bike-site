@@ -73,6 +73,8 @@ function checkGuesses() {
   if (allLettersGuessed) {
     console.log('All the letters have been guessed');
     alert('You have won');
+    window.location.reload();
+
     score++;
     localStorage.setItem('score', score);
     scoreElement.innerHTML = score;
