@@ -35,16 +35,6 @@ var mistakes = 0;
 document.getElementById('mistakes').innerHTML = parseInt(document.getElementById('mistakes').innerHTML); //need to look into why it is not updating 
 
 
-//checks to see length of word and compares it to the one completed 
-
-function letterGuessed(letter) {
-  // ... code to update the answerArray and check if the letter is correct // does not work
-
-  if (guess[randomGuess].every(letter => letter !== ' _ ')) {
-    console.log(guess[randomGuess].charAt(i),'All letters have been guessed!');
- letterGuessed(letter);     
-  }}
-  
 
 
 //keys to change letters being pressed on screen
@@ -56,6 +46,33 @@ function guessLetter(letter) {
     }
   }
 }
+//checks to see length of word and compares it to the one completed 
+// problem in the if statement i am not comparing the right variables i think letters{i} works but not random Guess
+function checkGuesses() {
+  const letters = guess[randomGuess].split('');
+  let allLettersGuessed = true;
+  for (let i = 0; i < letters.length; i++) {
+    // If the current letter has not been guessed, set the flag to false and break out of the loop
+    if (!answerArray.includes(letters[i])) {
+      allLettersGuessed = false;
+      break;
+    }
+  }
+  if (allLettersGuessed) {
+    console.log('All the letters have been guessed');
+  } else {
+    console.log('There are still some letters that have not been guessed');
+  }
+}
+
+//work on 
+//for (let i = 0; i < guess[randomGuess].length; i++) {
+  //if (answerArray[i] === guess[randomGuess]) {
+   // console.log(i, 'is same');
+  //} else {
+  //  console.log(i, 'is different');
+  //}
+  //console.log(guess[randomGuess][i]);}
 
 //update the picture with a wrong guess
 function guess_letter(letter) {
@@ -92,32 +109,32 @@ function guess_letter(letter) {
 
 
 //keyboard click to be registered
-document.getElementById("keya").onclick = function() { guess_letter("a"); };
-document.getElementById("keyb").onclick = function() { guess_letter("b"); };
-document.getElementById("keyc").onclick = function() { guess_letter("c");};
-document.getElementById("keyd").onclick = function() { guess_letter("d"); };
-document.getElementById("keye").onclick = function() { guess_letter("e"); };
-document.getElementById("keyf").onclick = function() { guess_letter("f"); };
-document.getElementById("keyg").onclick = function() { guess_letter("g"); };
-document.getElementById("keyh").onclick = function() { guess_letter("h"); };
-document.getElementById("keyi").onclick = function() { guess_letter("i"); };
-document.getElementById("keyj").onclick = function() { guess_letter("j"); };
-document.getElementById("keyk").onclick = function() { guess_letter("k"); };
-document.getElementById("keyl").onclick = function() { guess_letter("l"); };
-document.getElementById("keym").onclick = function() { guess_letter("m"); };
-document.getElementById("keyn").onclick = function() { guess_letter("n"); };
-document.getElementById("keyo").onclick = function() { guess_letter("o"); };
-document.getElementById("keyp").onclick = function() { guess_letter("p"); };
-document.getElementById("keyq").onclick = function() { guess_letter("q"); };
-document.getElementById("keyr").onclick = function() { guess_letter("r"); };
-document.getElementById("keys").onclick = function() { guess_letter("s"); };
-document.getElementById("keyt").onclick = function() { guess_letter("t"); };
-document.getElementById("keyu").onclick = function() { guess_letter("u"); };
-document.getElementById("keyv").onclick = function() { guess_letter("v"); };
-document.getElementById("keyw").onclick = function() { guess_letter("w"); };
-document.getElementById("keyx").onclick = function() { guess_letter("x"); };
-document.getElementById("keyy").onclick = function() { guess_letter("y"); };
-document.getElementById("keyz").onclick = function() { guess_letter("z"); };
+document.getElementById("keya").onclick = function() { guess_letter("a");checkGuesses(); };
+document.getElementById("keyb").onclick = function() { guess_letter("b");checkGuesses(); };
+document.getElementById("keyc").onclick = function() { guess_letter("c");checkGuesses();};
+document.getElementById("keyd").onclick = function() { guess_letter("d");checkGuesses(); };
+document.getElementById("keye").onclick = function() { guess_letter("e");checkGuesses(); };
+document.getElementById("keyf").onclick = function() { guess_letter("f");checkGuesses(); };
+document.getElementById("keyg").onclick = function() { guess_letter("g");checkGuesses(); };
+document.getElementById("keyh").onclick = function() { guess_letter("h");checkGuesses(); };
+document.getElementById("keyi").onclick = function() { guess_letter("i");checkGuesses(); };
+document.getElementById("keyj").onclick = function() { guess_letter("j");checkGuesses(); };
+document.getElementById("keyk").onclick = function() { guess_letter("k");checkGuesses(); };
+document.getElementById("keyl").onclick = function() { guess_letter("l");checkGuesses(); };
+document.getElementById("keym").onclick = function() { guess_letter("m");checkGuesses(); };
+document.getElementById("keyn").onclick = function() { guess_letter("n");checkGuesses(); };
+document.getElementById("keyo").onclick = function() { guess_letter("o");checkGuesses(); };
+document.getElementById("keyp").onclick = function() { guess_letter("p");checkGuesses(); };
+document.getElementById("keyq").onclick = function() { guess_letter("q");checkGuesses(); };
+document.getElementById("keyr").onclick = function() { guess_letter("r");checkGuesses(); };
+document.getElementById("keys").onclick = function() { guess_letter("s");checkGuesses(); };
+document.getElementById("keyt").onclick = function() { guess_letter("t");checkGuesses(); };
+document.getElementById("keyu").onclick = function() { guess_letter("u");checkGuesses(); };
+document.getElementById("keyv").onclick = function() { guess_letter("v");checkGuesses(); };
+document.getElementById("keyw").onclick = function() { guess_letter("w");checkGuesses(); };
+document.getElementById("keyx").onclick = function() { guess_letter("x");checkGuesses(); };
+document.getElementById("keyy").onclick = function() { guess_letter("y");checkGuesses(); };
+document.getElementById("keyz").onclick = function() { guess_letter("z");checkGuesses(); };
 //const buttona =document.getElementById("keya");
 //function buttonAClicked () {alert("button A clicked!"); } buttona.addEventListener('click', buttonAClicked) ;
 
