@@ -9,12 +9,15 @@ position: relative;
 z-index: -1; 
 
 }
+
+
+
 .letters-container{
-    margin-left: 300px;
-    margin-right: 300px;
+    width: 100%;
+    height:100%;
     display: grid;
     grid-template-columns: repeat(13, 1fr);
-    grid-gap: 4px;
+    grid-gap: 0.2rem;
     align-items: center;
 justify-content: center;
 margin: 0;
@@ -38,8 +41,8 @@ text-align: center;
    
 img
 {
-height: 4rem;
-width: 20rem;
+width: 100%;
+height: 100%;;
 background-repeat: no-repeat;
 text-align: center;
 padding: 3%;}
@@ -52,15 +55,27 @@ padding: 3%;}
 
 
 .key {
-    width: 50px;
-    height: 40px;
+    width: 2rem;
+    height: 1.5rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 150%;
+    
     background-color: lightskyblue;
-    border-radius: 10px;
+    
     border: none;  
     border-radius: 5px;  
     cursor: pointer;
+}
+
+.keypressed {
+    width: 2rem;
+    height: 1.5rem;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+background-color: rgb(185, 207, 255);
+
+border: none;  
+border-radius: 5px;  
+cursor: pointer;
 }
 
 .hangcontainer { } 

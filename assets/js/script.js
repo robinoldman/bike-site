@@ -46,10 +46,20 @@ function guessLetter(letter) {
     }
   }
 }
+
+
+//score element 
+let scoreElement = document.getElementById('score');
+
+
+// Get the current score from localStorage
+let score = parseInt(localStorage.getItem('score')) || 0;
+
+// Update the score element with the current score
+scoreElement.innerHTML = score;
+
 //checks to see length of word and compares it to the one completed 
 // problem in the if statement i am not comparing the right variables i think letters{i} works but not random Guess
-let scoreElement = document.getElementById('score');
-scoreElement.innerHTML = 0
 function checkGuesses() {
   const letters = guess[randomGuess].split('');
   let allLettersGuessed = true;
@@ -63,7 +73,9 @@ function checkGuesses() {
   if (allLettersGuessed) {
     console.log('All the letters have been guessed');
     alert('You have won');
-    scoreElement.innerHTML = parseInt(scoreElement.innerHTML) + 1;
+    score++;
+    localStorage.setItem('score', score);
+    scoreElement.innerHTML = score;
 
   } else {
     console.log('There are still some letters that have not been guessed');
@@ -88,20 +100,25 @@ function guess_letter(letter) {
 
   // Show the new picture if wrong answer
   let hangman = document.getElementById("hangman"); 
-  let hangmanImages = ["assets/images/spider2.png", "assets/images/spider3.png", "assets/images/spider4.png", "assets/images/spider5.png"]; // Array of hangman images
+  let hangmanImages = ["assets/images/spider2.png","assets/images/spider3.png","assets/images/spider4.png","assets/images/spider5.png"]; // Array of hangman images
   let index = 0; 
   document.getElementsByClassName("clue-container")[0].innerHTML = answerArray;
 
   if (!isCorrect) {
-    // Letter is not correct, so update the hangman image
     hangman.src = hangmanImages[index];
     index++; 
-    // Move to the next image in the array
+    // is only updating 1 image to the array  is not recognisiong the ++ console log says 
   }
 }
 
-// score card 
+const buttons = document.querySelectorAll('.key');
 
+for (let button of buttons) {
+  button.addEventListener('click', function() {
+    // Toggle the button-selected class
+    button.classList.toggle('keypressed');
+  });
+}
 
 
 
