@@ -41,13 +41,14 @@ function letterGuessed(letter) {
   // ... code to update the answerArray and check if the letter is correct // does not work
 
   if (guess[randomGuess].every(letter => letter !== ' _ ')) {
-    console.log('All letters have been guessed!');
+    console.log(guess[randomGuess].charAt(i),'All letters have been guessed!');
+ letterGuessed(letter);     
   }}
-
+  
 
 
 //keys to change letters being pressed on screen
-function guess_letter(letter) {
+function guessLetter(letter) {
   for (let i = 0; i < answerArray.length; i++) {
     if (guess[randomGuess][i] === letter) {
       
