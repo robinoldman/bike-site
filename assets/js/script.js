@@ -48,11 +48,13 @@ function guessLetter(letter) {
 }
 //checks to see length of word and compares it to the one completed 
 // problem in the if statement i am not comparing the right variables i think letters{i} works but not random Guess
+let scoreElement = document.getElementById('score');
+scoreElement.innerHTML = 0
 function checkGuesses() {
   const letters = guess[randomGuess].split('');
   let allLettersGuessed = true;
   for (let i = 0; i < letters.length; i++) {
-    // If the current letter has not been guessed, set the flag to false and break out of the loop
+    
     if (!answerArray.includes(letters[i])) {
       allLettersGuessed = false;
       break;
@@ -60,19 +62,15 @@ function checkGuesses() {
   }
   if (allLettersGuessed) {
     console.log('All the letters have been guessed');
+    alert('You have won');
+    scoreElement.innerHTML = parseInt(scoreElement.innerHTML) + 1;
+
   } else {
     console.log('There are still some letters that have not been guessed');
   }
 }
 
-//work on 
-//for (let i = 0; i < guess[randomGuess].length; i++) {
-  //if (answerArray[i] === guess[randomGuess]) {
-   // console.log(i, 'is same');
-  //} else {
-  //  console.log(i, 'is different');
-  //}
-  //console.log(guess[randomGuess][i]);}
+
 
 //update the picture with a wrong guess
 function guess_letter(letter) {
