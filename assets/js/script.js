@@ -40,6 +40,11 @@ function guessLetter(letter) {
   }
 }
 
+//wrong guess element 
+//score element 
+let wrongElement = document.getElementById('wrong');
+let wrong = parseInt(localStorage.getItem('wrong')) || 0;
+wrongElement.innerHTML = wrong;
 
 //score element 
 let scoreElement = document.getElementById('score');
@@ -64,11 +69,13 @@ function checkGuesses() {
     window.location.reload();
     score++;
     localStorage.setItem('score', score);
-    scoreElement.innerHTML = score;
+    scoreElement.innerHTML = score;}
 
-  } else {
-    console.log('There are still some letters that have not been guessed');
-  }
+  if (!allLettersGuessed) {
+  console.log('There are still some letters that have not been guessed');
+}
+
+
 }
 
 
@@ -96,6 +103,8 @@ function guess_letter(letter) {
   if (!isCorrect) {
     hangman.src = hangmanImages[index];
     index++; 
+    wrong++;
+    wrongElement.innerHTML = wrong;
     // is only updating 1 image to the array  is not recognisiong the ++ console log says 
   }
 }
