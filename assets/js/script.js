@@ -1,14 +1,13 @@
-var guess = ['everest', 'bennevis', 'montblanc', 'matterhorn', 'snowdon', 'mountfuji', 'kilimanjaro', 'elcapitan'];
-
+let guess = ['everest', 'bennevis', 'montblanc', 'matterhorn', 'snowdon', 'mountfuji', 'kilimanjaro', 'elcapitan'];
+let answerArray = [];
 // selects random word
-var randomGuess = Math.floor(Math.random() * guess.length);
-
-
+let randomGuess = Math.floor(Math.random() * guess.length);
+let index = 0; 
 
 
 //brings up _ _ _ for random guess
-var answerArray = [];
-for (var i = 0; i < guess[randomGuess].length; i++) {
+
+for (let i = 0; i < guess[randomGuess].length; i++) {
     answerArray[i] = " _ ";
 }
 
@@ -19,10 +18,10 @@ refreshButton.addEventListener('click', function() {
   location.reload();
 });
 
-var letterLeft = guess[randomGuess].length;
+let letterLeft = guess[randomGuess].length;
 document.getElementsByClassName("clue-container")[0].innerHTML = answerArray.join('');
 
-console.log(answerArray);
+
 console.log(guess[randomGuess]);
 
 //recognise when all letters have been done
@@ -114,7 +113,7 @@ if (wrong > 6) {
 }}
 
 
-let index = 0; 
+
 //update the picture with a wrong guess
 function guess_letter(letter) {
   let isCorrect = false; 
@@ -152,7 +151,6 @@ function reset() {
   score= 0;
   localStorage.setItem('score', 0);
   document.getElementById('score').innerHTML = 0;
-
 }
 
 const buttons = document.querySelectorAll('.key');
