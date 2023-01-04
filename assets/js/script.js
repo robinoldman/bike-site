@@ -64,25 +64,57 @@ function checkGuesses() {
   }
   if (allLettersGuessed) {
     console.log('All the letters have been guessed');
-    alert('You have won');
-    window.location.reload();
     score++;
     localStorage.setItem('score', score);
-    scoreElement.innerHTML = score;}
+    scoreElement.innerHTML = score;
+    Swal.fire({
+      title: 'You won',
+      text: "You saved the mountain!",
+      icon: 'success',
+      confirmButtonColor: '#3085d6',
+      confirmButtonText: 'Next go'
+    
+  }).then((result) => {
+    if (result.value) {
+      Swal.fire(
+        'Deleted!',
+        'Your file has been deleted.',
+        'success'
+      )
+      location.reload();
+    }
+  })
+  
+  }
 
   if (!allLettersGuessed) {
   console.log('There are still some letters that have not been guessed');
 }
-
-if (wrong > 7) {
+// taken from https://sweetalert2.github.io/
+if (wrong > 6) {
   console.log('You lost');
-  alert ('you lost try again');
-  window.location.reload();
-}
-}
+  Swal.fire({
+    title: 'You lost',
+    text: "Sorry you lost this time",
+    icon: 'error',
+    confirmButtonColor: '#3085d6',
+    confirmButtonText: 'Try again'
+  
+}).then((result) => {
+  if (result.value) {
+    Swal.fire(
+      'Deleted!',
+      'Your file has been deleted.',
+      'success'
+    )
+    location.reload();
+  }
+})
+  
+}}
 
 
-
+let index = 0; 
 //update the picture with a wrong guess
 function guess_letter(letter) {
   let isCorrect = false; 
@@ -99,8 +131,8 @@ function guess_letter(letter) {
 
   // Show the new picture if wrong answer
   let hangman = document.getElementById("hangman"); 
-  let hangmanImages = ["assets/images/tnt1.png","assets/images/tnt2.png","assets/images/tnt3.png","assets/images/tnt4.png"]; // Array of hangman images
-  let index = 0; 
+  let hangmanImages = ["assets/images/tnt2.png","assets/images/tnt3.png","assets/images/tnt4.png","assets/images/tnt5.png","assets/images/tnt6.png","assets/images/tnt7.png","assets/images/tnt8.png",]; // Array of hangman images
+  
   document.getElementsByClassName("clue-container")[0].innerHTML = answerArray;
   
 
@@ -127,7 +159,6 @@ const buttons = document.querySelectorAll('.key');
 
 for (let button of buttons) {
   button.addEventListener('click', function() {
-    // Toggle the button-selected class
     button.classList.toggle('keypressed');
   });
 }
@@ -162,85 +193,3 @@ document.getElementById("keyw").onclick = function() { guess_letter("w");checkGu
 document.getElementById("keyx").onclick = function() { guess_letter("x");checkGuesses(); };
 document.getElementById("keyy").onclick = function() { guess_letter("y");checkGuesses(); };
 document.getElementById("keyz").onclick = function() { guess_letter("z");checkGuesses(); };
-//const buttona =document.getElementById("keya");
-//function buttonAClicked () {alert("button A clicked!"); } buttona.addEventListener('click', buttonAClicked) ;
-
-//const buttonb =document.getElementById("keyb");
-//function buttonBClicked () {alert("button B clicked!"); } buttonb.addEventListener('click', buttonBClicked);
-
-//const buttonc =document.getElementById("keyc");
-//function buttonCClicked () {alert("button C clicked!"); } buttonc.addEventListener('click', buttonCClicked) ;
-     
-//const buttond =document.getElementById("keyd");
-//function buttonDClicked () {alert("button d clicked!"); } buttond.addEventListener('click', buttonDClicked) ;
-
-//const buttone =document.getElementById("keye");
-//function buttonEClicked () {alert("button e clicked!"); } buttone.addEventListener('click', buttonEClicked) ;
-
-//const buttonf =document.getElementById("keyf");
-//function buttonFClicked () {alert("button f clicked!"); } buttonf.addEventListener('click', buttonFClicked) ;
-
-//const buttong =document.getElementById("keyg");
-//function buttonGClicked () {alert("button g clicked!"); } buttong.addEventListener('click', buttonGClicked) ;
-
-//const buttonh =document.getElementById("keyh");
-//function buttonHClicked () {alert("button h clicked!"); } buttonh.addEventListener('click', buttonHClicked) ;
-
-//const buttoni =document.getElementById("keyi");
-//function buttonIClicked () {alert("button i clicked!"); } buttoni.addEventListener('click', buttonIClicked) ;
-
-//const buttonj =document.getElementById("keyj");
-//function buttonJClicked () {alert("button j clicked!"); } buttonj.addEventListener('click', buttonJClicked) ;
-
-//const buttonk =document.getElementById("keyk");
-//function buttonKClicked () {alert("button k clicked!"); } buttonk.addEventListener('click', buttonKClicked) ;
-
-//const buttonl =document.getElementById("keyl");
-//function buttonLClicked () {alert("button l clicked!"); } buttonl.addEventListener('click', buttonLClicked) ;
-
-//const buttonm =document.getElementById("keym");
-//function buttonMClicked () {alert("button m clicked!"); } buttonm.addEventListener('click', buttonMClicked) ;
-
-//const buttonn =document.getElementById("keyn");
-//function buttonNClicked () {alert("button n clicked!"); } buttonn.addEventListener('click', buttonNClicked) ;
-
-//const buttono =document.getElementById("keyo");
-//function buttonOClicked () {alert("button o clicked!"); } buttono.addEventListener('click', buttonOClicked) ;
-
-//const buttonp =document.getElementById("keyp");
-//function buttonPClicked () {alert("button p clicked!"); } buttonp.addEventListener('click', buttonPClicked) ;
-
-//const buttonq =document.getElementById("keyq");
-//function buttonQClicked () {alert("button q clicked!"); } buttonq.addEventListener('click', buttonQClicked) ;
-
-//const buttonr =document.getElementById("keyr");
-//function buttonRClicked () {alert("button r clicked!"); } buttonr.addEventListener('click', buttonRClicked) ;
-
-//const buttons =document.getElementById("keys");
-//function buttonSClicked () {alert("button s clicked!"); } buttons.addEventListener('click', buttonSClicked) ;
-
-//const buttont =document.getElementById("keyt");
-//function buttonTClicked () {alert("button t clicked!"); } buttont.addEventListener('click', buttonTClicked) ;
-
-//const buttonu =document.getElementById("keyu");
-//function buttonUClicked () {alert("button u clicked!"); } buttonu.addEventListener('click', buttonUClicked) ;
-
-//const buttonv =document.getElementById("keyv");
-//function buttonVClicked () {alert("button v clicked!"); } buttonv.addEventListener('click', buttonVClicked) ;
-
-//const buttonw =document.getElementById("keyw");
-//function buttonWClicked () {alert("button w clicked!"); } buttonw.addEventListener('click', buttonWClicked) ;
-
-//const buttonx =document.getElementById("keyx");
-//function buttonXClicked () {alert("button x clicked!"); } buttonx.addEventListener('click', buttonXClicked) ;
-
-//const buttony =document.getElementById("keyy");
-//function buttonYClicked () {alert("button y clicked!"); } buttony.addEventListener('click', buttonYClicked) ;
-
-//const buttonz =document.getElementById("keyz");
-//function buttonZClicked () {alert("button z clicked!"); } buttonz.addEventListener('click', buttonZClicked) ;
-//main game 
-
-
-
-
