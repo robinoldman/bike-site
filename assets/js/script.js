@@ -85,7 +85,7 @@ function checkGuesses() {
   })
   
   }
-
+//without this it does not work
   if (!allLettersGuessed) {
   console.log('There are still some letters that have not been guessed');
 }
