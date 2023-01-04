@@ -20,8 +20,7 @@ refreshButton.addEventListener('click', function() {
 });
 
 var letterLeft = guess[randomGuess].length;
-document.getElementsByClassName("clue-container")[0].innerHTML = answerArray;
-
+document.getElementsByClassName("clue-container")[0].innerHTML = answerArray.join('');
 
 console.log(answerArray);
 console.log(guess[randomGuess]);
@@ -43,7 +42,7 @@ function guessLetter(letter) {
 //wrong guess element 
 //score element 
 let wrongElement = document.getElementById('wrong');
-let wrong = parseInt(localStorage.getItem('wrong')) || 0;
+let wrong = 0;
 wrongElement.innerHTML = wrong;
 
 //score element 
@@ -75,7 +74,11 @@ function checkGuesses() {
   console.log('There are still some letters that have not been guessed');
 }
 
-
+if (wrong > 7) {
+  console.log('You lost');
+  alert ('you lost try again');
+  window.location.reload();
+}
 }
 
 
@@ -99,6 +102,8 @@ function guess_letter(letter) {
   let hangmanImages = ["assets/images/spider2.png","assets/images/spider3.png","assets/images/spider4.png","assets/images/spider5.png"]; // Array of hangman images
   let index = 0; 
   document.getElementsByClassName("clue-container")[0].innerHTML = answerArray;
+  
+
 
   if (!isCorrect) {
     hangman.src = hangmanImages[index];
