@@ -99,7 +99,7 @@ function guess_letter(letter) {
 
   // Show the new picture if wrong answer
   let hangman = document.getElementById("hangman"); 
-  let hangmanImages = ["assets/images/spider2.png","assets/images/spider3.png","assets/images/spider4.png","assets/images/spider5.png"]; // Array of hangman images
+  let hangmanImages = ["assets/images/tnt1.png","assets/images/tnt2.png","assets/images/tnt3.png","assets/images/tnt4.png"]; // Array of hangman images
   let index = 0; 
   document.getElementsByClassName("clue-container")[0].innerHTML = answerArray;
   
