@@ -102,22 +102,34 @@ FEATURES
 
    
 
-    Images
+    Hangman/tnt image
+    central to the game is changing hangman image. 
+    This image consists of a tnt block with a fuse. I used a playful image that was related to mountains which gave a clear visual representation of how many goes the player has left
 
 
     Mountain words
+    These appear randomly  from an array of famous mountain words. 
+    The word is then hidden with dashes. Each dash represents a letter 
 
 
     Mistakes score
+    this is updated by 1every time the player chooses a letter that is not in the word.
+    when the game is finished the mistakes score goes back to 0
 
 
-    score
+    Score
+    This goes up by 1 each time the player guesses the correct word.
+    the score stays the same even when the page is refreshed ready for the next game
 
     
     reset button
+    the reset button can be pressed if the player would like to start fresh.
+    it resets the whole score and the mistakes button
 
 
     alerts
+    A 'you've won alet appears when the word has been correctly guesssed
+    a'youve lost' alert appears when the player has not guessed the word in under 7 guesses. This alert is delayed my 2 seconds to allow the player the oppportunity to see the final 'explosion image'
 
 
     @ media queries for
