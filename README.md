@@ -59,21 +59,26 @@ What a user may want:
 
 STRUCTURE
 
-The 1 page website contains:
+The 1 page website contains: 
+simple instructions telling you how to play the game
+an image that changes everytime a wrong letter has been guesssed
+a word that has been ihidden by dashes that needs to be guessed
+a keyboard that reveals a correct letter in the dashes when it has ben pressed
+a score are that updates when a game has been won
+a mistakes score that updates everytime an incorrect letter has been guessed
+an alert message that appeas if you have won a game
+a loosing alert to tell you if you have lost a game
 
 
 
 COLOR SCHEME
 
-The color scheme is based on the main hero images with a mixture of pastel greens. This was created using 'coolors.com'
+The color scheme is based on the colours you would see on a snowy mounyain. The clours are a simple blue and white and the writing is a simple black, which is clear and easy to read
 
-alt text
-
-Color palette of hero image
 
 TYPOGRAPHY
 
-The fonts Karla and Spectral were used throughout the website. Karla was used for h1 and h2 headings. This gave the headings prominence. Spectral was used for all other text as it compliments Karla and easy to read.
+The font'Indie Flower', was used for the main body of the web site. This font is playful and adds to the frivolity of the game. For the buttons I used Gill Sans as it is easy to read. 
 
 TECHNOLOGIES USED
 
@@ -81,67 +86,52 @@ TECHNOLOGIES USED
 
     HTML5
     CSS
+    JavaScript
 
     Libraries and programs used:
 
     Google Fonts: Was used to import fonts
-    Coolors: Was used to find the color scheme from a photo and check the color contrast between the background and the text.
-    Font Awesome: Was used to add icons
+    
     Compress to go was used to compres large image sized
     Cloud convert used to convert jpeg files to webp files
-    Favicon Generator: Was used to create the favicon for the tab.
     Git: Was used for version control by employing the Gitpod terminal to commit to Git and Push to GitHub.
     GitHub: Was used as the repository for the project's code after being pushed from Git.
     Formspree to link the website form to my email and receive the information that has been sent
 
 FEATURES
 
-    NAVIGATION BAR
+   
 
-The navigation bar consists of a logo home gallery and newsletter form. The menu moves to the left after 950px and the menu becomes smaller at 600px
+    Images
 
-alt text
 
-    HOME SECTION
+    Mountain words
 
-The hero image is used for impact when visiting the site. It has a text informing the site visitor of the purpose of the site. The text box moves to the left of the screen after the screen has been reduced to 950px to make it easier to read on smaller devices.
 
-alt text
+    Mistakes score
 
-    Meet the Embroiderers section
 
-This section outlines 3 local artists being showcased. Each picture shows the name of the artist and each medium that they use. Each picture is a clickable link that takes you to the gallery. Each picture takes you to the specific area of the gallery that is specific to that artist.
+    score
 
-alt text
+    
+    reset button
 
-    Forms section
 
-The form section allows the user to request information on buying art or showcasing art. It allows the user to enter their name and email address to request information. Each box has a placeholder text. The form also has a radio button so the user can select it if they would like to buy or showcase art. The form has method= "post" and action="https://formdump.codeinistitute.net" for collecting data. Every user's data is sent to the selected email.
+    alerts
 
-alt text
 
-    GALLERY SECTION
-    From 600px devices
+    @ media queries for
+    From 700px devices
 
-alt text
 
-    From 950px devices
 
-alt text
+    From 1100px devices
 
-from 1270px devices
 
-alt text
 
-    FOOTER
 
-This area has been given a contrasting color of a darker green to help seperatr the relevant social media links
-
-alt text
-
-TESTING
-
-    VALIDATORS
+  
+ VALIDATORS
 
     Html validation
     Passed all checks
