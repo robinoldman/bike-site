@@ -97,6 +97,7 @@ TECHNOLOGIES USED
     Git: Was used for version control by employing the Gitpod terminal to commit to Git and Push to GitHub.
     GitHub: Was used as the repository for the project's code after being pushed from Git.
     Formspree to link the website form to my email and receive the information that has been sent
+    canva.com to create the tnt image
 
 FEATURES
 
