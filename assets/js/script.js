@@ -6,7 +6,6 @@ let index = 0;
 
 
 //brings up _ _ _ for random guess
-
 for (let i = 0; i < words[randomWordIndex].length; i++) {
     answerArray[i] = " _ ";
 }
@@ -71,7 +70,8 @@ function checkGuesses() {
       text: "You saved the mountain!",
       icon: 'success',
       confirmButtonColor: '#3085d6',
-      confirmButtonText: 'Next go'
+      confirmButtonText: 'Next go',
+      
     
   }).then((result) => {
     if (result.value) {
@@ -97,7 +97,8 @@ if (wrong > 6) {
     text: "Sorry you lost this time",
     icon: 'error',
     confirmButtonColor: '#3085d6',
-    confirmButtonText: 'Try again'
+    confirmButtonText: 'Try again',
+    
   
 }).then((result) => {
   if (result.value) {
@@ -113,9 +114,8 @@ if (wrong > 6) {
 }}
 
 
-
 //update the picture with a wrong guess
-function guess_letter(letter) {
+function guessLetter(letter) {
   let isCorrect = false; 
 
   for (let i = 0; i < answerArray.length; i++) {
@@ -130,7 +130,7 @@ function guess_letter(letter) {
 
   // Show the new picture if wrong answer
   let hangman = document.getElementById("hangman"); 
-  let hangmanImages = ["assets/images/tnt2.png","assets/images/tnt3.png","assets/images/tnt4.png","assets/images/tnt5.png","assets/images/tnt6.png","assets/images/tnt7.png","assets/images/explode.png",]; // Array of hangman images
+  let hangmanImages = ["assets/images/tnt2.png","assets/images/tnt3.png","assets/images/tnt4.png","assets/images/tnt5.png","assets/images/tnt6.png","assets/images/tnt7.png","assets/images/explosion2.jpg",]; // Array of hangman images
   
   document.getElementsByClassName("clue-container")[0].innerHTML = answerArray;
   
@@ -163,7 +163,7 @@ for (let key of keyboardKeys) {
 
     let clickedLetter = clickedKey.dataset.value
 
-    guess_letter(clickedLetter);
+    guessLetter(clickedLetter);
     checkGuesses();
   })
 }
