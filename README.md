@@ -4,11 +4,12 @@ Mountain hangaman
 
 ABOUT THE PROJECT
 
-Mountain hangman is an unreal project created for my PP2 with Code Institute. Mountain hangman is a website which is a simple hangman style game
+Mountain hangman is an unreal project created for my PP2 with Code Institute. Mountain hangman is a website which is a simple hangman style game that can be played with an interactive keyboard.
 
 ABOUT THE WEBSITE
 
-The Web site is a simple 1 page website that allows users to play the hangman game easily. It contains a keyboard which can be pressed 
+The Web site is a simple 1 page website that allows users to play the hangman game easily. It contains a hidden word, an tnt picture with a fuse that changes when a wrong letter is guessed and a an interactive keyboard.
+
 INDEX
 
 User Experience
@@ -31,52 +32,36 @@ STRATEGY
 
 Reasons for this website:
 
-    To showcase local Artist designs
-    Sell local Artist designs
+    To learn the names of famous mountians
+    for people to enjoy playing a game 
 
 Reasons a user may visit the website:
 
-    To find new artwork to buy
-    To showcase their own artwork
-    To sign up to a newsletter
-    To enjoy Artwork to look at
+    To learn the names of famous mountians
+    To enjoy playing a game 
 
 SCOPE
 
 What a user may expect:
 
-    Working links
-    Design that is consistent throughout the website
-    A way to get in contact for more details.
+    smooth interactivity
+    a fun game
+    interesting graphics
+    to know when they have lost
+    to know when they have won
 
 What a user may want:
 
-    To look at interesting artwork
-    To find out information about local artists
-    To find social media links.
+    a working keyboard
+    a way of keepoing score
+
+
 
 STRUCTURE
 
-The 3 page website contains:
+The 1 page website contains:
 
-Home page
 
-    A hero image with the title and logo of the club
-    Section about each artist
-
-Gallery page
-
-    A selection of images for each picture
-
-Contact page
-
-    A form which can be filled out to ask for information
-
-DESIGNS
-
-IMAGES
-
-The hero image has been chosen to inform the visitor what the website is about. It has a homely, artisan aesthetic to help give the website an ethos.
 
 COLOR SCHEME
 
