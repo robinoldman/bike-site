@@ -1,15 +1,14 @@
-Embroidery Club
+Mountain hangaman
 
-alt text
+
 
 ABOUT THE PROJECT
 
-Embroidery club is an unreal project created for my PP1 with Code Institute. Embroidery club is a website creating an online community for artists. It has been created to showcase local artist's work as well as to encourage an online community.
+Mountain hangman is an unreal project created for my PP2 with Code Institute. Mountain hangman is a website which is a simple hangman style game
 
 ABOUT THE WEBSITE
 
-The Web site is a simple 3 page website that allows local artists to showcase and sell their work. It has a simple and easy-to-navigate homepage which demonstrates the purpose of the site. It gives a brief outline of local artists and provides links to the gallery. The Gallery page provides a selection of artwork. Each artwork has a description of the picture which can be seen when hovered over. The website also has a page where local artists can submit a query, either to buy artwork or have their artwork showcased.
-
+The Web site is a simple 1 page website that allows users to play the hangman game easily. It contains a keyboard which can be pressed 
 INDEX
 
 User Experience
