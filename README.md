@@ -148,11 +148,12 @@ FEATURES
     Html validation
     Passed all checks
 
-alt text
 
-    Css validation passed all checks
 
-alt text
+    Css validation 
+    passed all checks
+
+
 
     BROWSERS
 
@@ -166,27 +167,15 @@ Mozilla Firefox 106.0.3 (64-bit)
 
 I used Lighthouse for testing: Performance, Best Practices, Accessibility, and SEO.
 
-alt text
 
-Performance and accessibility previously had scores of 86 and 84. Lighthouse picked out large photo sizes as an issue as well as small menu text when screen size was reduced. I compressed all images and converted them to webp files. This allowed the website to perform much better. I also changed the color of the menu font. This allowed it to be viewed more clearly.
+The game scored high ion everyting paprt from SEO it scored 84
+the issues were the gaps betwee nthe buttons and the website not containing meta data.
 
-    FORM TESTING
 
-The form has method = post and the information is sent to: https://formspree.io/f/xvoynykn for collecting data.
-
-    I wrote in my own information and received this as a message.
-
-alt text
-
-    I received a notification from my formspree account showing what information had been requested.
-
-alt text
-
+    
 ISSUES DURING TESTING
 
-The issues during testing were through lighthouse. Performance and accessibility previously had scores of 86 and 84. Lighthouse picked out large photo sizes as an issue. I compressed all images and converted them to webp files. This allowed the website to perform much better. I also changed the color of the menu font. This allowed it to be viewed more clearly.
 
-During testing I also found that the menu was too small when being used on mobile devices. I changed the size of the menu to make it more acessable.
 
 DEPLOYMENT
 
@@ -201,7 +190,7 @@ HOW THIS SITE WAS DEPLOYED
 
     Go to Git hub and navigate to the main page of the repository
     On the menu , click Code.
-    Select and copy https://robinoldman.github.io/project-1-embroidery/index.html
+    Select and copy https://github.com/robinoldman/mountain-hang-man
     Change the current working directory to the location where you want the cloned directory.
     type git clone, and then paste the URL you copied earlier.
 
@@ -212,7 +201,7 @@ CREDITS
         I used this tutorial to help me with cantering all my images in the home page and the newsletter. https://blog.hubspot.com/website/center-an-image-in-html
         I use this tutorial https://www.w3schools.com/howto/howto_css_bottom_nav.asp to help me anchor my footer to the bottom of the page
     MEDIA
-        The hero image was from https://www.freepik.com
+        The background image was from https://www.freepik.com
 
 ACKNOWLEDGMENTS
 
