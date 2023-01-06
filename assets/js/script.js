@@ -25,7 +25,7 @@ for (let i = 0; i < words[randomWordIndex].length; i++) {
     answerArray[i] = " _ ";
 }
 
-//refresh button - refreshes the whoe game so that score goes back to 0
+//refresh button - refreshes the whole game so that score goes back to 0
 const refreshButton = document.getElementById('refresh-button');
 refreshButton.addEventListener('click', function() {
   reset();
@@ -102,20 +102,20 @@ function checkGuesses() {
 // taken from https://sweetalert2.github.io/
 if (wrong > 6) {
   console.log('You lost');
-  Swal.fire({
-    title: 'You lost',
-    text: "Sorry you lost this time",
-    icon: 'error',
-    confirmButtonColor: '#3085d6',
-    confirmButtonText: 'Try again',
-    
-  
-}).then((result) => {
-  if (result.value) {
-    location.reload();
-  }
-})
-  
+  setTimeout(function() {
+    Swal.fire({
+      title: 'You lost',
+      text: "Sorry you lost this time",
+      icon: 'error',
+      confirmButtonColor: '#3085d6',
+      confirmButtonText: 'Try again',
+      
+    }).then((result) => {
+      if (result.value) {
+        location.reload();
+      }
+    });
+  }, 2000);
 }}
 
 
@@ -160,42 +160,3 @@ function reset() {
 }
 
 
-
-
-//const buttons = document.querySelectorAll('.key');
-
-//for (let button of buttons) {
-  //button.addEventListener('click', function() {
-    //button.classList.toggle('keypressed');
-  //});
-//}
-
-
-
-//keyboard click to be registered
-//document.getElementById("keya").onclick = function() { guess_letter("a");checkGuesses(); };
-//document.getElementById("keyb").onclick = function() { guess_letter("b");checkGuesses(); };
-//document.getElementById("keyc").onclick = function() { guess_letter("c");checkGuesses();};
-//document.getElementById("keyd").onclick = function() { guess_letter("d");checkGuesses(); };
-//document.getElementById("keye").onclick = function() { guess_letter("e");checkGuesses(); };
-//document.getElementById("keyf").onclick = function() { guess_letter("f");checkGuesses(); };
-//document.getElementById("keyg").onclick = function() { guess_letter("g");checkGuesses(); };
-//document.getElementById("keyh").onclick = function() { guess_letter("h");checkGuesses(); };
-//document.getElementById("keyi").onclick = function() { guess_letter("i");checkGuesses(); };
-//document.getElementById("keyj").onclick = function() { guess_letter("j");checkGuesses(); };
-//document.getElementById("keyk").onclick = function() { guess_letter("k");checkGuesses(); };
-//document.getElementById("keyl").onclick = function() { guess_letter("l");checkGuesses(); };
-//document.getElementById("keym").onclick = function() { guess_letter("m");checkGuesses(); };
-//document.getElementById("keyn").onclick = function() { guess_letter("n");checkGuesses(); };
-//document.getElementById("keyo").onclick = function() { guess_letter("o");checkGuesses(); };
-//document.getElementById("keyp").onclick = function() { guess_letter("p");checkGuesses(); };
-//document.getElementById("keyq").onclick = function() { guess_letter("q");checkGuesses(); };
-//document.getElementById("keyr").onclick = function() { guess_letter("r");checkGuesses(); };
-//document.getElementById("keys").onclick = function() { guess_letter("s");checkGuesses(); };
-//document.getElementById("keyt").onclick = function() { guess_letter("t");checkGuesses(); };
-//document.getElementById("keyu").onclick = function() { guess_letter("u");checkGuesses(); };
-//document.getElementById("keyv").onclick = function() { guess_letter("v");checkGuesses(); };
-//document.getElementById("keyw").onclick = function() { guess_letter("w");checkGuesses(); };
-//document.getElementById("keyx").onclick = function() { guess_letter("x");checkGuesses(); };
-//document.getElementById("keyy").onclick = function() { guess_letter("y");checkGuesses(); };
-//document.getElementById("keyz").onclick = function() { guess_letter("z");checkGuesses(); };
