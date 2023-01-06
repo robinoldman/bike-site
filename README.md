@@ -1,108 +1,237 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+Embroidery Club
 
-Welcome robinoldman,
+alt text
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+ABOUT THE PROJECT
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Embroidery club is an unreal project created for my PP1 with Code Institute. Embroidery club is a website creating an online community for artists. It has been created to showcase local artist's work as well as to encourage an online community.
 
-## Gitpod Reminders
+ABOUT THE WEBSITE
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The Web site is a simple 3 page website that allows local artists to showcase and sell their work. It has a simple and easy-to-navigate homepage which demonstrates the purpose of the site. It gives a brief outline of local artists and provides links to the gallery. The Gallery page provides a selection of artwork. Each artwork has a description of the picture which can be seen when hovered over. The website also has a page where local artists can submit a query, either to buy artwork or have their artwork showcased.
 
-`python3 -m http.server`
+INDEX
 
-A blue button should appear to click: _Make Public_,
+User Experience
 
-Another blue button should appear to click: _Open Browser_.
+Designs
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Technology used
 
-A blue button should appear to click: _Make Public_,
+Features
 
-Another blue button should appear to click: _Open Browser_.
+Testing
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Deployment
 
-To log into the Heroku toolbelt CLI:
+Credits
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+USER EXPERIENCE
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+STRATEGY
 
-------
+Reasons for this website:
 
-## Release History
+    To showcase local Artist designs
+    Sell local Artist designs
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+Reasons a user may visit the website:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+    To find new artwork to buy
+    To showcase their own artwork
+    To sign up to a newsletter
+    To enjoy Artwork to look at
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+SCOPE
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+What a user may expect:
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+    Working links
+    Design that is consistent throughout the website
+    A way to get in contact for more details.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+What a user may want:
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+    To look at interesting artwork
+    To find out information about local artists
+    To find social media links.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+STRUCTURE
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+The 3 page website contains:
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+Home page
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+    A hero image with the title and logo of the club
+    Section about each artist
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+Gallery page
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+    A selection of images for each picture
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Contact page
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+    A form which can be filled out to ask for information
 
-------
+DESIGNS
 
-## FAQ about the uptime script
+IMAGES
 
-**Why have you added this script?**
+The hero image has been chosen to inform the visitor what the website is about. It has a homely, artisan aesthetic to help give the website an ethos.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+COLOR SCHEME
 
-**How will this affect me?**
+The color scheme is based on the main hero images with a mixture of pastel greens. This was created using 'coolors.com'
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+alt text
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+Color palette of hero image
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+TYPOGRAPHY
 
-**So….?**
+The fonts Karla and Spectral were used throughout the website. Karla was used for h1 and h2 headings. This gave the headings prominence. Spectral was used for all other text as it compliments Karla and easy to read.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+TECHNOLOGIES USED
 
-**Can I opt out?**
+    Languages used:
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+    HTML5
+    CSS
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+    Libraries and programs used:
 
-**Anything more?**
+    Google Fonts: Was used to import fonts
+    Coolors: Was used to find the color scheme from a photo and check the color contrast between the background and the text.
+    Font Awesome: Was used to add icons
+    Compress to go was used to compres large image sized
+    Cloud convert used to convert jpeg files to webp files
+    Favicon Generator: Was used to create the favicon for the tab.
+    Git: Was used for version control by employing the Gitpod terminal to commit to Git and Push to GitHub.
+    GitHub: Was used as the repository for the project's code after being pushed from Git.
+    Formspree to link the website form to my email and receive the information that has been sent
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+FEATURES
 
----
+    NAVIGATION BAR
 
-Happy coding!
+The navigation bar consists of a logo home gallery and newsletter form. The menu moves to the left after 950px and the menu becomes smaller at 600px
+
+alt text
+
+    HOME SECTION
+
+The hero image is used for impact when visiting the site. It has a text informing the site visitor of the purpose of the site. The text box moves to the left of the screen after the screen has been reduced to 950px to make it easier to read on smaller devices.
+
+alt text
+
+    Meet the Embroiderers section
+
+This section outlines 3 local artists being showcased. Each picture shows the name of the artist and each medium that they use. Each picture is a clickable link that takes you to the gallery. Each picture takes you to the specific area of the gallery that is specific to that artist.
+
+alt text
+
+    Forms section
+
+The form section allows the user to request information on buying art or showcasing art. It allows the user to enter their name and email address to request information. Each box has a placeholder text. The form also has a radio button so the user can select it if they would like to buy or showcase art. The form has method= "post" and action="https://formdump.codeinistitute.net" for collecting data. Every user's data is sent to the selected email.
+
+alt text
+
+    GALLERY SECTION
+    From 600px devices
+
+alt text
+
+    From 950px devices
+
+alt text
+
+from 1270px devices
+
+alt text
+
+    FOOTER
+
+This area has been given a contrasting color of a darker green to help seperatr the relevant social media links
+
+alt text
+
+TESTING
+
+    VALIDATORS
+
+    Html validation
+    Passed all checks
+
+alt text
+
+    Css validation passed all checks
+
+alt text
+
+    BROWSERS
+
+I tested how the website loked in different browsers. Firefox was the main browser. I used dev tools to resize the screen. I also wrote text on all pages on a range of devices. This worked well and I had no issues.
+
+Google Chrome Version 107.0.5304.87 (Official Build) (arm64)
+
+Mozilla Firefox 106.0.3 (64-bit)
+
+    LIGHTHOUSE
+
+I used Lighthouse for testing: Performance, Best Practices, Accessibility, and SEO.
+
+alt text
+
+Performance and accessibility previously had scores of 86 and 84. Lighthouse picked out large photo sizes as an issue as well as small menu text when screen size was reduced. I compressed all images and converted them to webp files. This allowed the website to perform much better. I also changed the color of the menu font. This allowed it to be viewed more clearly.
+
+    FORM TESTING
+
+The form has method = post and the information is sent to: https://formspree.io/f/xvoynykn for collecting data.
+
+    I wrote in my own information and received this as a message.
+
+alt text
+
+    I received a notification from my formspree account showing what information had been requested.
+
+alt text
+
+ISSUES DURING TESTING
+
+The issues during testing were through lighthouse. Performance and accessibility previously had scores of 86 and 84. Lighthouse picked out large photo sizes as an issue. I compressed all images and converted them to webp files. This allowed the website to perform much better. I also changed the color of the menu font. This allowed it to be viewed more clearly.
+
+During testing I also found that the menu was too small when being used on mobile devices. I changed the size of the menu to make it more acessable.
+
+DEPLOYMENT
+
+HOW THIS SITE WAS DEPLOYED
+
+    Go to the Git hub repository and click on settings
+    On the left hand menu click on pages
+    On the main page on the branch section click 'main' and save
+    The page should now be available on the github pages section above
+
+    HOW TO CLONE THIS SITE
+
+    Go to Git hub and navigate to the main page of the repository
+    On the menu , click Code.
+    Select and copy https://robinoldman.github.io/project-1-embroidery/index.html
+    Change the current working directory to the location where you want the cloned directory.
+    type git clone, and then paste the URL you copied earlier.
+
+CREDITS
+
+    CODE
+        The homepage layout was inspired by the project Love Running by Code Institute . I then later edited and changed the page
+        I used this tutorial to help me with cantering all my images in the home page and the newsletter. https://blog.hubspot.com/website/center-an-image-in-html
+        I use this tutorial https://www.w3schools.com/howto/howto_css_bottom_nav.asp to help me anchor my footer to the bottom of the page
+    MEDIA
+        The hero image was from https://www.freepik.com
+
+ACKNOWLEDGMENTS
+
+    My mentor Brian Macharia helped me through many issues and hurdles along the way with expert advice on my CSS and HTML. My Brother Patrick Oldman also supported me and recommended tutorials to watch online to help with any issues.
+
+Disclaimer
+
+The content of this Website is for educational purposes only.
