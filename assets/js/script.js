@@ -1,13 +1,13 @@
-let guess = ['everest', 'bennevis', 'montblanc', 'matterhorn', 'snowdon', 'mountfuji', 'kilimanjaro', 'elcapitan'];
+const words = ['everest', 'bennevis', 'montblanc', 'matterhorn', 'snowdon', 'mountfuji', 'kilimanjaro', 'elcapitan'];
 let answerArray = [];
 // selects random word
-let randomGuess = Math.floor(Math.random() * guess.length);
+let randomWordIndex = Math.floor(Math.random() * words.length);
 let index = 0; 
 
 
 //brings up _ _ _ for random guess
 
-for (let i = 0; i < guess[randomGuess].length; i++) {
+for (let i = 0; i < words[randomWordIndex].length; i++) {
     answerArray[i] = " _ ";
 }
 
@@ -18,11 +18,11 @@ refreshButton.addEventListener('click', function() {
   location.reload();
 });
 
-let letterLeft = guess[randomGuess].length;
+let letterLeft = words[randomWordIndex].length;
 document.getElementsByClassName("clue-container")[0].innerHTML = answerArray.join('');
 
 
-console.log(guess[randomGuess]);
+console.log(words[randomWordIndex]);
 
 //recognise when all letters have been done
 
@@ -31,7 +31,7 @@ console.log(guess[randomGuess]);
 //keys to change letters being pressed on screen
 function guessLetter(letter) {
   for (let i = 0; i < answerArray.length; i++) {
-    if (guess[randomGuess][i] === letter) {
+    if (words[randomGuess][i] === letter) {
       
       answerArray[i] = letter;
     }
@@ -52,7 +52,7 @@ scoreElement.innerHTML = score;
 //checks to see length of word and compares it to the one completed 
 // problem in the if statement i am not comparing the right variables i think letters{i} works but not random Guess
 function checkGuesses() {
-  const letters = guess[randomGuess].split('');
+  const letters = words[randomWordIndex].split('');
   let allLettersGuessed = true;
   for (let i = 0; i < letters.length; i++) {
     
@@ -119,7 +119,7 @@ function guess_letter(letter) {
   let isCorrect = false; 
 
   for (let i = 0; i < answerArray.length; i++) {
-    if (guess[randomGuess][i] === letter) {
+    if (words[randomWordIndex][i] === letter) {
 
       
 // Update the answerArray to replace the dash with the correct letter
