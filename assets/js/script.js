@@ -3,31 +3,47 @@ let answerArray = [];
 // selects random word
 let randomWordIndex = Math.floor(Math.random() * words.length);
 let index = 0; 
+const keyboardKeys = document.getElementsByClassName('key')
 
+
+//event listener fo keyboard in game
+for (let key of keyboardKeys) {
+  key.addEventListener('click', function(event) {
+    let clickedKey = event.currentTarget
+
+    key.classList.toggle('keypressed');
+
+    let clickedLetter = clickedKey.dataset.value
+
+    guessLetter(clickedLetter);
+    checkGuesses();
+  })
+}
 
 //brings up _ _ _ for random guess
 for (let i = 0; i < words[randomWordIndex].length; i++) {
     answerArray[i] = " _ ";
 }
 
-//refresh button // resets to 0 but then goes back to orginal score 
+//refresh button - refreshes the whoe game so that score goes back to 0
 const refreshButton = document.getElementById('refresh-button');
 refreshButton.addEventListener('click', function() {
   reset();
   location.reload();
 });
 
+// sets the text content of the first element with the class 
+//"clue-container" to the elements of answerArray 
 let letterLeft = words[randomWordIndex].length;
 document.getElementsByClassName("clue-container")[0].innerHTML = answerArray.join('');
-
-
 console.log(words[randomWordIndex]);
 
-//recognise when all letters have been done
 
 
 
-//keys to change letters being pressed on screen
+
+//checks the words array at the index randomGuess to see if any letters in the selected word match the input letter. 
+//If there is a match, the corresponding index in the answerArray is updated to contain the matching letter. 
 function guessLetter(letter) {
   for (let i = 0; i < answerArray.length; i++) {
     if (words[randomGuess][i] === letter) {
@@ -38,18 +54,19 @@ function guessLetter(letter) {
 }
 
 //wrong guess element 
-//score element 
+// sets wrong guesses to 0
 let wrongElement = document.getElementById('wrong');
 let wrong = 0;
 wrongElement.innerHTML = wrong;
 
-//score element 
+//score element sets score to 0 
 let scoreElement = document.getElementById('score');
 let score = parseInt(localStorage.getItem('score')) || 0;
 scoreElement.innerHTML = score;
 
 //checks to see length of word and compares it to the one completed 
-// problem in the if statement i am not comparing the right variables i think letters{i} works but not random Guess
+// if the letters all match and the word is guessed corrrectly the 'you won alert appears
+//if more than 7 wroing attemps have been made an error message appears sayin 'sorry you lost'
 function checkGuesses() {
   const letters = words[randomWordIndex].split('');
   let allLettersGuessed = true;
@@ -75,20 +92,13 @@ function checkGuesses() {
     
   }).then((result) => {
     if (result.value) {
-      Swal.fire(
-        'Deleted!',
-        'Your file has been deleted.',
-        'success'
-      )
       location.reload();
     }
   })
   
   }
-//without this it does not work
-  if (!allLettersGuessed) {
-  console.log('There are still some letters that have not been guessed');
-}
+
+  if (!allLettersGuessed)
 // taken from https://sweetalert2.github.io/
 if (wrong > 6) {
   console.log('You lost');
@@ -102,11 +112,6 @@ if (wrong > 6) {
   
 }).then((result) => {
   if (result.value) {
-    Swal.fire(
-      'Deleted!',
-      'Your file has been deleted.',
-      'success'
-    )
     location.reload();
   }
 })
@@ -114,7 +119,7 @@ if (wrong > 6) {
 }}
 
 
-//update the picture with a wrong guess
+//checks if the letter that was guessed is correct If there is a match, the value of isCorrect is set to true.
 function guessLetter(letter) {
   let isCorrect = false; 
 
@@ -128,24 +133,25 @@ function guessLetter(letter) {
     }
   }
 
-  // Show the new picture if wrong answer
+  // Shows the new picture if wrong answer by going through the array of images
   let hangman = document.getElementById("hangman"); 
   let hangmanImages = ["assets/images/tnt2.png","assets/images/tnt3.png","assets/images/tnt4.png","assets/images/tnt5.png","assets/images/tnt6.png","assets/images/tnt7.png","assets/images/explosion2.jpg",]; // Array of hangman images
-  
   document.getElementsByClassName("clue-container")[0].innerHTML = answerArray;
   
 
-
+//if a wrong letter the next picture adds one
+//if wrong letterthe wrong letter index goes up by 1
   if (!isCorrect) {
     hangman.src = hangmanImages[index];
     index++; 
     wrong++;
     wrongElement.innerHTML = wrong;
-    // is only updating 1 image to the array  is not recognisiong the ++ console log says 
+    
   }
 }
 
 //resets the game ready for a fresh start
+//this resets the score to 0
 
 function reset() {
   score= 0;
@@ -153,20 +159,7 @@ function reset() {
   document.getElementById('score').innerHTML = 0;
 }
 
-const keyboardKeys = document.getElementsByClassName('key')
 
-for (let key of keyboardKeys) {
-  key.addEventListener('click', function(event) {
-    let clickedKey = event.currentTarget
-
-    key.classList.toggle('keypressed');
-
-    let clickedLetter = clickedKey.dataset.value
-
-    guessLetter(clickedLetter);
-    checkGuesses();
-  })
-}
 
 
 //const buttons = document.querySelectorAll('.key');
