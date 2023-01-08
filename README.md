@@ -174,9 +174,16 @@ I used Lighthouse for testing: Performance, Best Practices, Accessibility, and S
 The game scored high ion everyting paprt from SEO it scored 84
 the issues were the gaps betwee nthe buttons and the website not containing meta data.
 
-
     
 ##ISSUES DURING TESTING
+
+during testing I realised thaty not all iof the gamne was visible during the mobile vieww. I changed the breakpoint and the size of the font as well as the size of the refresh button.
+
+during the javascript validation I realised that I had not changed a function that i had renamed
+
+During testing i realised that my buttons were too close together for a mobile. i changed the size of the gap between them
+
+
 
 
 
