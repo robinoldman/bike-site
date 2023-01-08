@@ -3,22 +3,22 @@ let answerArray = [];
 // selects random word
 let randomWordIndex = Math.floor(Math.random() * words.length);
 let index = 0; 
-const keyboardKeys = document.getElementsByClassName('key')
+const keyboardKeys = document.getElementsByClassName('key');
 
 
 
 //event listener fo keyboard in game
 for (let key of keyboardKeys) {
   key.addEventListener('click', function(event) {
-    let clickedKey = event.currentTarget
+    let clickedKey = event.currentTarget;
 
     key.classList.toggle('keypressed');
 
-    let clickedLetter = clickedKey.dataset.value
+    let clickedLetter = clickedKey.dataset.value;
 
     guessLetter(clickedLetter);
     checkGuesses();
-  })
+  });
 }
 
 
@@ -54,7 +54,7 @@ console.log(words[randomWordIndex]);
 //If there is a match, the corresponding index in the answerArray is updated to contain the matching letter. 
 function guessLetter(letter) {
   for (let i = 0; i < answerArray.length; i++) {
-    if (words[randomGuess][i] === letter) {
+    if (words[randomWordIndex][i] === letter) {
       
       answerArray[i] = letter;
     }
@@ -108,7 +108,7 @@ function checkGuesses() {
     if (result.value) {
       location.reload();
     }
-  })
+  });
   
   }
 
