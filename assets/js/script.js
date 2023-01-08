@@ -6,6 +6,7 @@ let index = 0;
 const keyboardKeys = document.getElementsByClassName('key')
 
 
+
 //event listener fo keyboard in game
 for (let key of keyboardKeys) {
   key.addEventListener('click', function(event) {
@@ -20,10 +21,7 @@ for (let key of keyboardKeys) {
   })
 }
 
-//brings up _ _ _ for random guess
-for (let i = 0; i < words[randomWordIndex].length; i++) {
-    answerArray[i] = " _ ";
-}
+
 
 //refresh button - refreshes the whole game so that score goes back to 0
 const refreshButton = document.getElementById('refresh-button');
@@ -31,6 +29,16 @@ refreshButton.addEventListener('click', function() {
   reset();
   location.reload();
 });
+
+
+
+
+//brings up _ _ _ for random guess
+for (let i = 0; i < words[randomWordIndex].length; i++) {
+    answerArray[i] = " _ ";
+}
+
+
 
 // sets the text content of the first element with the class 
 //"clue-container" to the elements of answerArray 
@@ -53,16 +61,22 @@ function guessLetter(letter) {
   }
 }
 
+
+
 //wrong guess element 
 // sets wrong guesses to 0
 let wrongElement = document.getElementById('wrong');
 let wrong = 0;
 wrongElement.innerHTML = wrong;
 
+
+
 //score element sets score to 0 
 let scoreElement = document.getElementById('score');
 let score = parseInt(localStorage.getItem('score')) || 0;
 scoreElement.innerHTML = score;
+
+
 
 //checks to see length of word and compares it to the one completed 
 // if the letters all match and the word is guessed corrrectly the 'you won alert appears
@@ -119,6 +133,8 @@ if (wrong > 6) {
 }}
 
 
+
+
 //checks if the letter that was guessed is correct If there is a match, the value of isCorrect is set to true.
 function guessLetter(letter) {
   let isCorrect = false; 
@@ -127,17 +143,23 @@ function guessLetter(letter) {
     if (words[randomWordIndex][i] === letter) {
 
       
+
+
 // Update the answerArray to replace the dash with the correct letter
       answerArray[i] = letter;
       isCorrect = true;
     }
   }
 
+
+
   // Shows the new picture if wrong answer by going through the array of images
   let hangman = document.getElementById("hangman"); 
   let hangmanImages = ["assets/images/tnt2.png","assets/images/tnt3.png","assets/images/tnt4.png","assets/images/tnt5.png","assets/images/tnt6.png","assets/images/tnt7.png","assets/images/explosion2.jpg",]; // Array of hangman images
-  document.getElementsByClassName("clue-container")[0].innerHTML = answerArray;
+  document.getElementsByClassName("clue-container")[0].innerHTML = answerArray.join('');
   
+
+
 
 //if a wrong letter the next picture adds one
 //if wrong letterthe wrong letter index goes up by 1
@@ -150,8 +172,12 @@ function guessLetter(letter) {
   }
 }
 
+
+
 //resets the game ready for a fresh start
 //this resets the score to 0
+
+
 
 function reset() {
   score= 0;
