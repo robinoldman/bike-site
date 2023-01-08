@@ -183,7 +183,7 @@ during the javascript validation I realised that I had not changed a function th
 
 During testing i realised that my buttons were too close together for a mobile. i changed the size of the gap between them
 
-
+During testing I realised that although there were no commas between the dashes for the initial word, when a letter was guessed commas appeared. I changed the position of my.join to solve this.
 
 
 
