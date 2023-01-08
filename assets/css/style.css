@@ -107,7 +107,13 @@ cursor: pointer;
     .game-container {
       width: 80%;
       margin-top: 2rem;
+      font-size: 85%;
+
       
     }}
 
-     
+@media (max-width: 500px) {
+        .reset-key{
+          width: 40%;
+          
+        }}
