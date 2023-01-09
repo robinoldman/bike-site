@@ -81,12 +81,12 @@ a loosing alert to tell you if you have lost a game
 
 ##COLOR SCHEME
 
-The color scheme is based on the colours you would see on a snowy mounyain. The clours are a simple blue and white and the writing is a simple black, which is clear and easy to read
+The color scheme is based on the colours you would see on a snowy mountain. The colours are a simple blue and white and the writing is a simple black, which is clear and easy to read.
 
 
 ##TYPOGRAPHY
 
-The font'Indie Flower', was used for the main body of the web site. This font is playful and adds to the frivolity of the game. For the buttons I used Gill Sans as it is easy to read. 
+The font 'Indie Flower', was used for the main body of the web site. This font is playful and adds to the frivolity of the game. For the buttons I used Gill Sans as it is easy to read. 
 
 ##TECHNOLOGIES USED
 
@@ -198,6 +198,8 @@ I also discovered I was not using the variable 'letter' and I deleted it.
 During testing I realised that my buttons were too close together for a mobile. I changed the size of the gap between them to make them more accessible.
 
 During testing I realised that, although there were no commas between the dashes for the initial word, when a letter was guessed commas appeared. I changed the position of my.join to solve this.
+
+During testing my tnt images would change after 1 wrong guess. After this the images would stay the same. I realised the index++ variable was set as a local variable. I vhanged to global, which corrected the mistake. 
 
 
 
