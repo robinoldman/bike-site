@@ -4,7 +4,10 @@ let answerArray = [];
 let randomWordIndex = Math.floor(Math.random() * words.length);
 let index = 0; 
 const keyboardKeys = document.getElementsByClassName('key');
-
+let hangman = document.getElementById("hangman"); 
+  let hangmanImages = ["assets/images/tnt2.png","assets/images/tnt3.png",
+  "assets/images/tnt4.png","assets/images/tnt5.png","assets/images/tnt6.png",
+  "assets/images/tnt7.png","assets/images/explosion2.jpg",]; // Array of hangman images
 
 
 //event listener fo keyboard in game
@@ -44,7 +47,7 @@ for (let i = 0; i < words[randomWordIndex].length; i++) {
 //"clue-container" to the elements of answerArray 
 let letterLeft = words[randomWordIndex].length;
 document.getElementsByClassName("clue-container")[0].innerHTML = answerArray.join('');
-console.log(words[randomWordIndex]);
+
 
 
 
@@ -154,8 +157,7 @@ function guessLetter(letter) {
 
 
   // Shows the new picture if wrong answer by going through the array of images
-  let hangman = document.getElementById("hangman"); 
-  let hangmanImages = ["assets/images/tnt2.png","assets/images/tnt3.png","assets/images/tnt4.png","assets/images/tnt5.png","assets/images/tnt6.png","assets/images/tnt7.png","assets/images/explosion2.jpg",]; // Array of hangman images
+  
   document.getElementsByClassName("clue-container")[0].innerHTML = answerArray.join('');
   
 
