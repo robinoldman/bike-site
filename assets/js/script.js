@@ -36,7 +36,7 @@ refreshButton.addEventListener('click', function() {
 
 
 
-//brings up _ _ _ for random guess
+//brings up _ _ _ each time there is a random guess from the 'words' index
 for (let i = 0; i < words[randomWordIndex].length; i++) {
     answerArray[i] = " _ ";
 }
@@ -53,8 +53,9 @@ document.getElementsByClassName("clue-container")[0].innerHTML = answerArray.joi
 
 
 
-//checks the words array at the index randomGuess to see if any letters in the selected word match the input letter. 
-//If there is a match, the corresponding index in the answerArray is updated to contain the matching letter. 
+//checks the words array at the index randomGuess to see if any letters in the 
+//selected word match the input letter. If there is a match, the corresponding 
+//index in the answerArray is updated to contain the matching letter. 
 function guessLetter(letter) {
   for (let i = 0; i < answerArray.length; i++) {
     if (words[randomWordIndex][i] === letter) {
