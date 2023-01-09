@@ -1,4 +1,4 @@
-#Mountain hangaman 
+###Mountain Hangaman 
 
 ![device view](./assets/images/deviceview.png)
 
@@ -106,7 +106,7 @@ canva.com to create the tnt image
    
 
 Hangman/tnt image
-central to the game is changing hangman image. 
+central to the game is the changing hangman image. 
 This image consists of a tnt block with a fuse. I used a playful image that was related to mountains which gave a clear visual representation of how many goes the player has left
 ![hangman image](./assets/images/hangman.png)
 
@@ -132,10 +132,10 @@ it resets the whole score and the mistakes button
 ![reset](./assets/images/reset.png)
 
 alerts
-A 'you've won alet appears when the word has been correctly guesssed
-a'youve lost' alert appears when the player has not guessed the word in under 7 guesses. This alert is delayed my 2 seconds to allow the player the oppportunity to see the final 'explosion image'
+A 'you've won' alert appears when the word has been correctly guesssed
+a'you've lost' alert appears when the player has not guessed the word in under 7 guesses. This alert is delayed my 2 seconds to allow the player the oppportunity to see the final 'explosion image'
 
-
+![alert](./assets/images/alert.png)
 
 
 @ media queries for
@@ -175,19 +175,23 @@ I used Lighthouse for testing: Performance, Best Practices, Accessibility, and S
 ![old lighthouse](./assets/images/lighthouse%20old.png)
 ![new lighthouse](./assets/images/loighthouse%20new.png)
 
-The game scored high ion everyting paprt from SEO it scored 84
+The game scored high on everyting apart from SEO it scored 84
 the issues were the gaps betwee nthe buttons and the website not containing meta data.
 
     
 ##ISSUES DURING TESTING
 
-during testing I realised thaty not all iof the gamne was visible during the mobile vieww. I changed the breakpoint and the size of the font as well as the size of the refresh button.
+During testing I realised that not all of the game was visible during the mobile view. I changed the breakpoint and the size of the font as well as the size of the refresh button.
 
-during the javascript validation I realised that I had not changed a function that i had renamed
+I also realised that the font was far to small for the desktop view and changed the size for a desktop.
 
-During testing i realised that my buttons were too close together for a mobile. i changed the size of the gap between them
+During the javascript validation I realised that I had not changed a function that I had renamed. I gave the function the appropriate name
 
-During testing I realised that although there were no commas between the dashes for the initial word, when a letter was guessed commas appeared. I changed the position of my.join to solve this.
+I also discovered I was not using the variable 'letter' and I deleted it. 
+
+During testing I realised that my buttons were too close together for a mobile. I changed the size of the gap between them to make them more accessible.
+
+During testing I realised that, although there were no commas between the dashes for the initial word, when a letter was guessed commas appeared. I changed the position of my.join to solve this.
 
 
 
@@ -207,6 +211,17 @@ On the menu , click Code.
 Select and copy https://github.com/robinoldman/mountain-hang-man
 Change the current working directory to the location where you want the cloned directory.
 type git clone, and then paste the URL you copied earlier.
+
+FORKING
+
+Forking the GitHub Repository
+
+By forking the GitHub Repository, you can make a copy of the original repository in your own GitHub account. This means we can view or make changes without making the changes affecting the original.
+
+Log into GitHub and locate the GitHub Repository.
+At the top of the Repository there is a "Fork" button about the "Settings" button on the menu.
+You should now have a new copy of the original repository in your own GitHub account.
+
 
 ##CREDITS
 
