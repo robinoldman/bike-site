@@ -32,6 +32,9 @@ USER EXPERIENCE
 
 STRATEGY
 
+
+
+
 ##Reasons for this website:
 
 To learn the names of famous mountians
@@ -41,6 +44,7 @@ for people to enjoy playing a game
 
 To learn the names of famous mountians
 To enjoy playing a game 
+
 
 ##SCOPE
 
@@ -55,7 +59,9 @@ to know when they have won
 ##What a user may want:
 
 a working keyboard
-a way of keepoing score
+a way of keeping score
+a way of knowing howm many guesses they have left
+a way to reset the whole game so they can play again
 
 
 
