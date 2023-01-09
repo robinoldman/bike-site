@@ -52,8 +52,8 @@ to know when they have won
 
 ##What a user may want:
 
-    a working keyboard
-    a way of keepoing score
+a working keyboard
+a way of keepoing score
 
 
 
@@ -106,6 +106,7 @@ canva.com to create the tnt image
 Hangman/tnt image
 central to the game is changing hangman image. 
 This image consists of a tnt block with a fuse. I used a playful image that was related to mountains which gave a clear visual representation of how many goes the player has left
+![hangman image](./assets/images/hangman.png)
 
 
 Mountain words
