@@ -1,64 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hangman mountain game to play to learn name of famous mountains">
     <meta name="keywords" content=" hangman,  game, mountain, learning">
-    <link rel="stylesheet" href ="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
     <title>Save the mountain</title>
 </head>
+
 <body>
     <main class="game-container">
-<h1> Save the mountain </h1>
-<p> the name of a mountain, before your mountain gets blown up! Guess a wrong letter and the fuse will get shorter!</p>
+        <h1> Save the mountain </h1>
+        <p> the name of a mountain, before your mountain gets blown up! Guess a wrong letter and the fuse will get shorter!</p>
 
-<!--Game of Hangman-->
-<div class="spider-container"><img src="./assets/images/tnt1.png" alt="hangman image" id="hangman"> </div>
-<div class="clue-container"></div>
+        <!--Game of Hangman-->
+        <div class="spider-container"><img src="./assets/images/tnt1.png" alt="hangman image" id="hangman"> </div>
+        <div class="clue-container"></div>
 
-<div class="right-score"></div>
-<div class="refresh"><button id="refresh-button" class="reset-key">reset your score</button></div>
-<div class="score-container">Score: <span id="score"></span></div>
-<div class="score-container">Wrong guesses: <span id="wrong"></span> out of: 7</div> 
-<div class="letters-container">
-
-      
-
-<button id="keya" class="key" data-value="a">A</button>
-<button id="keyb" class="key" data-value="b">B</button>
-<button id="keyc" class="key" data-value="c">C</button>
-<button id="keyd" class="key" data-value="d">D</button>
-<button id="keye" class="key" data-value="e">E</button>
-<button id="keyf" class="key" data-value="f">F</button>
-<button id="keyg" class="key" data-value="g">G</button>
-<button id="keyh" class="key" data-value="h">H</button>
-<button id="keyi" class="key" data-value="i">I</button>
-<button id="keyj" class="key" data-value="j">J</button>
-<button id="keyk" class="key" data-value="k">K</button>
-<button id="keyl" class="key" data-value="l">L</button>
-<button id="keym" class="key" data-value="m">M</button>
-<button id="keyn" class="key" data-value="n">N</button>
-<button id="keyo" class="key" data-value="o">O</button>
-<button id="keyp" class="key" data-value="p">P</button>
-<button id="keyq" class="key" data-value="q">Q</button>
-<button id="keyr" class="key" data-value="r">R</button>
-<button id="keys" class="key" data-value="s">S</button>
-<button id="keyt" class="key" data-value="t">T</button>
-<button id="keyu" class="key" data-value="u">U</button>
-<button id="keyv" class="key" data-value="v">V</button>
-<button id="keyw" class="key" data-value="w">W</button>
-<button id="keyx" class="key" data-value="x">X</button>
-<button id="keyy" class="key" data-value="y">Y</button>
-<button id="keyz" class="key" data-value="z">Z</button>
-</div>
+        <div class="right-score"></div>
+        <div class="refresh"><button id="refresh-button" class="reset-key">reset your score</button></div>
+        <div class="score-container">Score: <span id="score"></span></div>
+        <div class="score-container">Wrong guesses: <span id="wrong"></span> out of: 7</div>
+        <div class="letters-container">
 
 
+            <!--keyboard-->
+            <button id="keya" class="key" data-value="a">A</button>
+            <button id="keyb" class="key" data-value="b">B</button>
+            <button id="keyc" class="key" data-value="c">C</button>
+            <button id="keyd" class="key" data-value="d">D</button>
+            <button id="keye" class="key" data-value="e">E</button>
+            <button id="keyf" class="key" data-value="f">F</button>
+            <button id="keyg" class="key" data-value="g">G</button>
+            <button id="keyh" class="key" data-value="h">H</button>
+            <button id="keyi" class="key" data-value="i">I</button>
+            <button id="keyj" class="key" data-value="j">J</button>
+            <button id="keyk" class="key" data-value="k">K</button>
+            <button id="keyl" class="key" data-value="l">L</button>
+            <button id="keym" class="key" data-value="m">M</button>
+            <button id="keyn" class="key" data-value="n">N</button>
+            <button id="keyo" class="key" data-value="o">O</button>
+            <button id="keyp" class="key" data-value="p">P</button>
+            <button id="keyq" class="key" data-value="q">Q</button>
+            <button id="keyr" class="key" data-value="r">R</button>
+            <button id="keys" class="key" data-value="s">S</button>
+            <button id="keyt" class="key" data-value="t">T</button>
+            <button id="keyu" class="key" data-value="u">U</button>
+            <button id="keyv" class="key" data-value="v">V</button>
+            <button id="keyw" class="key" data-value="w">W</button>
+            <button id="keyx" class="key" data-value="x">X</button>
+            <button id="keyy" class="key" data-value="y">Y</button>
+            <button id="keyz" class="key" data-value="z">Z</button>
+        </div>
 
-</main>
+
+
+    </main>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

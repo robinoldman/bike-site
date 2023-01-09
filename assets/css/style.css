@@ -1,127 +1,132 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 body {
-font-family: 'Indie Flower', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Indie Flower', 'Arial Narrow', Arial, sans-serif;
 
-background-image: url(../images/mountain3.jpg);
-position: relative;  
-z-index: -1; 
+    background-image: url(../images/mountain3.jpg);
+    position: relative;
+    z-index: -1;
 
 
 }
 
 
-
-.letters-container{
+/* keyboard */  
+.letters-container {
     display: flex;
     width: 100%;
-    height:100%;
+    height: 100%;
     flex-wrap: wrap;
-  flex-direction: row;
-  
-  align-items: center;
+    flex-direction: row;
+
+    align-items: center;
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 0.2rem;
     align-items: center;
-justify-content: center;
-margin: 0;
+    justify-content: center;
+    margin: 0;
 
 
 }
 
 
-
+/* main game*/
 .game-container {
 
-   font-size: 100%; 
+    font-size: 100%;
     text-align: center;
     background-color: white;
     opacity: 0.9;
-    padding-top: 1% ;
-    padding-bottom: 1% ;
-    padding-left: 3% ;
-    padding-right: 3% ;
-    width: 30%;  
-    height: 50%; 
-    margin: auto; 
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 30%;
+    height: 50%;
+    margin: auto;
     margin-top: 1rem;
     border-radius: 5px;
-   
-    
-}
-   
-img
-{
-width: 100%;
-height: 100%;
-background-repeat: no-repeat;
-text-align: center;
-padding: 3%;}
 
-.score-container
-{font-size: 150%;
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 3%;
+}
+/* score for winning games*/
+.score-container {
+    font-size: 150%;
     margin-top: 3%;
     margin: 2%;
 
 }
-
+/* resets whole game a fresh */
 .reset-key {
     width: 25%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 100%;
     background-color: lightskyblue;
     margin: 2%;
-    border: none;  
-    border-radius: 5px;  
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
+
 
 .key {
     flex: 0 0 12.5%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 100%;
     background-color: lightskyblue;
-    border: none;  
-    border-radius: 5px;  
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
     margin: 4px;
 }
-
+/*keys that have already been pressed*/
 .keypressed {
     width: 100%;
     height: 100%;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-background-color: rgb(185, 207, 255);
-pointer-events: none;
-border: none;  
-border-radius: 5px;  
-cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(185, 207, 255);
+    pointer-events: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
+/*break points*/
+
 @media (max-width: 1100px) {
-        .game-container {
-          width: 60%;}}
+    .game-container {
+        width: 60%;
+    }
+}
 
 @media (max-width: 700px) {
     .game-container {
-      width: 80%;
-      margin-top: 2rem;
-      font-size: 85%;
+        width: 80%;
+        margin-top: 2rem;
+        font-size: 85%;
 
-      
-    }}
+
+    }
+}
 
 @media (max-width: 500px) {
-        .reset-key{
-          width: 40%;
-          
-        }}
+    .reset-key {
+        width: 40%;
+
+    }
+}
 
 @media (min-width: 1100px) {
-          .game-container {
-            font-size: 135%;
-            width:50%
-      
-            
-          }}
+    .game-container {
+        font-size: 135%;
+        width: 50%
+    }
+}
