@@ -117,17 +117,17 @@ The word is then hidden with dashes. Each dash represents a letter
 Mistakes score
 this is updated by 1every time the player chooses a letter that is not in the word.
 when the game is finished the mistakes score goes back to 0
-
+![mistakes score](./assets/images/mistakes.png)
 
 Score
 This goes up by 1 each time the player guesses the correct word.
 the score stays the same even when the page is refreshed ready for the next game
-
+![score](./assets/images/score.png)
     
 reset button
 the reset button can be pressed if the player would like to start fresh.
 it resets the whole score and the mistakes button
-
+![reset](./assets/images/reset.png)
 
 alerts
 A 'you've won alet appears when the word has been correctly guesssed
@@ -138,11 +138,11 @@ a'youve lost' alert appears when the player has not guessed the word in under 7 
 
 @ media queries for
 From 700px devices
-
+![phone](./assets/images/phone.png)
 
 
 From 1100px devices
-
+![ipad](./assets/images/ipad.png)
 
 
 
@@ -151,12 +151,12 @@ From 1100px devices
 VALIDATORS
 Html validation
 Passed all checks
-
+![html](./assets/images/html.png)
 
 
 Css validation 
 passed all checks
-
+![css](./assets/images/css.png)
 
 
 BROWSERS
@@ -170,7 +170,8 @@ Mozilla Firefox 106.0.3 (64-bit)
 LIGHTHOUSE
 
 I used Lighthouse for testing: Performance, Best Practices, Accessibility, and SEO.
-
+![old lighthouse](./assets/images/lighthouse%20old.png)
+![new lighthouse](./assets/images/loighthouse%20new.png)
 
 The game scored high ion everyting paprt from SEO it scored 84
 the issues were the gaps betwee nthe buttons and the website not containing meta data.
