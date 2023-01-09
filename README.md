@@ -163,7 +163,7 @@ passed all checks
 
 BROWSERS
 
-I tested how the website loked in different browsers. Firefox was the main browser. I used dev tools to resize the screen. I also wrote text on all pages on a range of devices. This worked well and I had no issues.
+I tested how the website looked in different browsers. Firefox was the main browser. I used dev tools to resize the screen. I also wrote text on all pages on a range of devices. This worked well and I had no issues.
 
 Google Chrome Version 107.0.5304.87 (Official Build) (arm64)
 
