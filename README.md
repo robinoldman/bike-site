@@ -1,14 +1,14 @@
-###Mountain Hangaman 
+### Mountain Hangaman 
 
 ![device view](./assets/images/deviceview.png)
 
 
 
-##ABOUT THE PROJECT
+## ABOUT THE PROJECT
 
 Mountain hangman is an unreal project created for my PP2 with Code Institute. Mountain hangman is a website which is a simple hangman style game that can be played with an interactive keyboard.
 
-##ABOUT THE WEBSITE
+## ABOUT THE WEBSITE
 
 The Web site is a simple 1 page website that allows users to play the hangman game easily. It contains a hidden word, an tnt picture with a fuse that changes when a wrong letter is guessed and a an interactive keyboard.
 
