@@ -1,5 +1,7 @@
 #Mountain hangaman 
 
+![device view](./assets/images/deviceview.png)
+
 
 
 ##ABOUT THE PROJECT

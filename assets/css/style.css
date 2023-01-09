@@ -101,7 +101,7 @@ img {
 
 /*break points*/
 
-@media (max-width: 1100px) {
+@media (max-width: 1080px) {
     .game-container {
         width: 60%;
     }
@@ -124,9 +124,10 @@ img {
     }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1080px) {
     .game-container {
         font-size: 135%;
-        width: 50%
+        width: 50%;
+        margin-top: 5rem;
     }
 }
