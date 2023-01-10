@@ -1,6 +1,6 @@
 # Mountain Hangaman 
 
-![device view](./assets/images/deviceview.png)
+![device view](./assets/images/responsive.png)
 
 
 
