@@ -196,14 +196,15 @@ the issues were the gaps betwee nthe buttons and the website not containing meta
 |functional on 500px|       fit to screen    |    pass            |         |
 |do all the images appear when loading           | all pics load          |   pass  |           |does a random word appear hidden by dashes? |    
 |does the keyboard register the letters             | all letters register the letter on the button          | pass            |are the letters disabled when pressed?       |
-|does a letter appear when in the word           |the letter appears on the dashes array wh correct           |  pass  |            |does the image change when a wrong letter is pressed?|   |pass
-|is the wong score updated when a wong word is pressed?      |score updates by 1|    pass  |is the score updated when a correct answer is guessed?    |pass        |         |does alert come when correct word guessed|    |pass     |
-|does alert come after 7 wrong lettters guessed?        |sweet alert pops up   |pass        |does the score stay after a won game?         |     |pass
+|does a letter appear when in the word           | letter appears on the dashes array when correct           |  pass  |            |does the image change when a wrong letter is pressed?|   |pass
+|is the wong score updated when a wrong word is pressed?      |score updates by 1|    pass  |is the score updated when a correct answer is guessed?    |pass        |         |does alert come when correct word guessed|    |pass     |
+|does alert come after 7 wrong letters guessed?        |sweet alert pops up after a delay to show explosion  |pass        |does the score stay after a won game?         |     |pass
 |does the reset button reset the whole game? |reset button clears all letters on the guess board and sets wrong score and score to 0           |     pass    |       |         |
 |are the letters disabled when pressed?             |all letters grey out and can not be pressed again           |  pass              |         |
-|does the image change when a wrong letter is pressed?             |the image moves on to the next image in the array           |        pass  |      |         |    |    |    |
-
-
+|does the image change when a wrong letter is pressed?             |the image moves on to the next image in the array           |        pass  |      |         |    |    |    | 
+   |is the score updated when a correct answer is guessed?    |the score updates by 1 when a score is guessed correctly    |pass    |   |   
+ |does alert come when correct word guessed         | alert appears saying you have won   | pass   |    | 
+ |reset button clears all letters on the guess board and sets wrong score and score to 0          |reset button resets the whole game    | pass   | 
 
     
 ## ISSUES DURING TESTING
@@ -255,9 +256,12 @@ You should now have a new copy of the original repository in your own GitHub acc
 ## CREDITS
 
 CODE
-The homepage layout was inspired by the project Love Running by Code Institute . I then later edited and changed the page
-I used this tutorial to help me with cantering all my images in the home page and the newsletter. https://blog.hubspot.com/website/center-an-image-in-html
-I use this tutorial https://www.w3schools.com/howto/howto_css_bottom_nav.asp to help me anchor my footer to the bottom of the page
+I used https://www.google.com/search?client=firefox-b-d&q=hangman+in+javascript+tutorial#fpstate=ive&vld=cid:6a7bfb36,vid:dgvyE1sJS3Y
+as a rough guide for the layout of the game. 
+I used https://www.youtube.com/watch?v=N3cq0BHDMOY
+to help me create a keyboard
+I used the code provided from https://sweetalert2.github.io/
+for the designed alert
    
 ## MEDIA
 The background image was from https://www.freepik.com
