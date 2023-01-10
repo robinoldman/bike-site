@@ -6,6 +6,8 @@ body {
     background-image: url(../images/mountain3.jpg);
     position: relative;
     z-index: -1;
+    max-width: 2000px;
+    margin: 0 auto;
 
 
 }

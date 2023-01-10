@@ -1,4 +1,4 @@
-### Mountain Hangaman 
+# Mountain Hangaman 
 
 ![device view](./assets/images/deviceview.png)
 
@@ -12,7 +12,7 @@ Mountain hangman is an unreal project created for my PP2 with Code Institute. Mo
 
 The Web site is a simple 1 page website that allows users to play the hangman game easily. It contains a hidden word, an tnt picture with a fuse that changes when a wrong letter is guessed and a an interactive keyboard.
 
-INDEX
+## INDEX
 
 User Experience
 
@@ -35,7 +35,7 @@ STRATEGY
 
 
 
-##Reasons for this website:
+## Reasons for this website:
 
 To learn the names of famous mountians
 for people to enjoy playing a game 
@@ -46,9 +46,9 @@ To learn the names of famous mountians
 To enjoy playing a game 
 
 
-##SCOPE
+## SCOPE
 
-##What a user may expect:
+## What a user may expect:
 
 smooth interactivity
 a fun game
@@ -56,7 +56,7 @@ interesting graphics
 to know when they have lost
 to know when they have won
 
-##What a user may want:
+## What a user may want:
 
 a working keyboard
 a way of keeping score
@@ -65,7 +65,7 @@ a way to reset the whole game so they can play again
 
 
 
-##STRUCTURE
+## STRUCTURE
 
 The 1 page website contains: 
 simple instructions telling you how to play the game
@@ -79,16 +79,16 @@ a loosing alert to tell you if you have lost a game
 
 
 
-##COLOR SCHEME
+## COLOR SCHEME
 
 The color scheme is based on the colours you would see on a snowy mountain. The colours are a simple blue and white and the writing is a simple black, which is clear and easy to read.
 
 
-##TYPOGRAPHY
+## TYPOGRAPHY
 
 The font 'Indie Flower', was used for the main body of the web site. This font is playful and adds to the frivolity of the game. For the buttons I used Gill Sans as it is easy to read. 
 
-##TECHNOLOGIES USED
+## TECHNOLOGIES USED
 
 Languages used:
 
@@ -99,7 +99,7 @@ JavaScript
 Libraries and programs used:
 
 Google Fonts: Was used to import fonts
-    
+Sweetalerts: to add design to the alerts
 Compress to go was used to compres large image sized
 Cloud convert used to convert jpeg files to webp files
 Git: Was used for version control by employing the Gitpod terminal to commit to Git and Push to GitHub.
@@ -107,10 +107,9 @@ GitHub: Was used as the repository for the project's code after being pushed fro
 Formspree to link the website form to my email and receive the information that has been sent
 canva.com to create the tnt image
 
-##FEATURES
+## FEATURES
 
    
-
 Hangman/tnt image
 central to the game is the changing hangman image. 
 This image consists of a tnt block with a fuse. I used a playful image that was related to mountains which gave a clear visual representation of how many goes the player has left
@@ -143,6 +142,7 @@ a'you've lost' alert appears when the player has not guessed the word in under 7
 
 ![alert](./assets/images/alert.png)
 
+## breakpoints
 
 @ media queries for
 From 700px devices
@@ -154,7 +154,7 @@ From 1100px devices
 
 
 
-##Testing
+## Testing
 
 VALIDATORS
 Html validation
@@ -184,8 +184,29 @@ I used Lighthouse for testing: Performance, Best Practices, Accessibility, and S
 The game scored high on everyting apart from SEO it scored 84
 the issues were the gaps betwee nthe buttons and the website not containing meta data.
 
+## Testing grid
+
+
+|test action|expected outcome|outcome 
+|-----------|--------------|----------------------
+|work on firefox  | no issues  |pass | |
+|work on safari            |  no issues         |    pass            |         |
+|work on chrome            |     no issues      |    pass            |         |
+|functional on 1500px            |  fit to screen         |  pass              |functional on 800px|     fit to screen            |   pass     |           |       |
+|functional on 500px|       fit to screen    |    pass            |         |
+|do all the images appear when loading           | all pics load          |   pass  |           |does a random word appear hidden by dashes? |    
+|does the keyboard register the letters             | all letters register the letter on the button          | pass            |are the letters disabled when pressed?       |
+|does a letter appear when in the word           |the letter appears on the dashes array wh correct           |  pass  |            |does the image change when a wrong letter is pressed?|   |pass
+|is the wong score updated when a wong word is pressed?      |score updates by 1|    pass  |is the score updated when a correct answer is guessed?    |pass        |         |does alert come when correct word guessed|    |pass     |
+|does alert come after 7 wrong lettters guessed?        |sweet alert pops up   |pass        |does the score stay after a won game?         |     |pass
+|does the reset button reset the whole game? |reset button clears all letters on the guess board and sets wrong score and score to 0           |     pass    |       |         |
+|are the letters disabled when pressed?             |all letters grey out and can not be pressed again           |  pass              |         |
+|does the image change when a wrong letter is pressed?             |the image moves on to the next image in the array           |        pass  |      |         |    |    |    |
+
+
+
     
-##ISSUES DURING TESTING
+## ISSUES DURING TESTING
 
 During testing I realised that not all of the game was visible during the mobile view. I changed the breakpoint and the size of the font as well as the size of the refresh button.
 
@@ -203,7 +224,7 @@ During testing my tnt images would change after 1 wrong guess. After this the im
 
 
 
-##DEPLOYMENT
+## DEPLOYMENT
 
 HOW THIS SITE WAS DEPLOYED
 
@@ -231,20 +252,20 @@ At the top of the Repository there is a "Fork" button about the "Settings" butto
 You should now have a new copy of the original repository in your own GitHub account.
 
 
-##CREDITS
+## CREDITS
 
 CODE
 The homepage layout was inspired by the project Love Running by Code Institute . I then later edited and changed the page
 I used this tutorial to help me with cantering all my images in the home page and the newsletter. https://blog.hubspot.com/website/center-an-image-in-html
 I use this tutorial https://www.w3schools.com/howto/howto_css_bottom_nav.asp to help me anchor my footer to the bottom of the page
    
-##MEDIA
+## MEDIA
 The background image was from https://www.freepik.com
 
-#ACKNOWLEDGMENTS
+### ACKNOWLEDGMENTS
 
 My mentor Brian Macharia helped me through many issues and hurdles along the way with expert advice on my CSS and HTML. My Brother Patrick Oldman also supported me and recommended tutorials to watch online to help with any issues.
 
-##Disclaimer
+### Disclaimer
 
 The content of this Website is for educational purposes only.
