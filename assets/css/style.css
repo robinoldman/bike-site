@@ -126,8 +126,8 @@ img {
 
 @media (min-width: 1080px) {
     .game-container {
-        font-size: 135%;
-        width: 50%;
+        font-size: 110%;
+        width: 40%;
         margin-top: 5rem;
     }
 }

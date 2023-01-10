@@ -55,6 +55,12 @@ document.getElementsByClassName("clue-container")[0].innerHTML = answerArray.joi
 //checks the words array at the index randomGuess to see if any letters in the 
 //selected word match the input letter. If there is a match, the corresponding 
 //index in the answerArray is updated to contain the matching letter. 
+
+/* Given a letter, check whetherit's in the correct word.
+
+@param {string} letter -The letter to check
+*/
+
 function guessLetter(letter) {
     for (let i = 0; i < answerArray.length; i++) {
         if (words[randomWordIndex][i] === letter) {
@@ -83,7 +89,10 @@ scoreElement.innerHTML = score;
 
 //checks to see length of word and compares it to the one completed 
 // if the letters all match and the word is guessed corrrectly the 'you won alert appears
-//if more than 7 wroing attemps have been made an error message appears sayin 'sorry you lost'
+//if more than 7 wrong attempts have been made an error message appears sayin 'sorry you lost'
+/*
+@param {string} words[randomWordIndex] -The word to check
+*/
 function checkGuesses() {
     const letters = words[randomWordIndex].split('');
     let allLettersGuessed = true;
@@ -95,7 +104,6 @@ function checkGuesses() {
         }
     }
     if (allLettersGuessed) {
-        console.log('All the letters have been guessed');
         score++;
         localStorage.setItem('score', score);
         scoreElement.innerHTML = score;
@@ -139,7 +147,11 @@ function checkGuesses() {
 
 
 
-//checks if the letter that was guessed is correct If there is a match, the value of isCorrect is set to true.
+//checks if the letter that was guessed is correct If there is a match, the value of is Correct is set to true.
+/*
+* guessLetter(letter) - check if the letter guessed is present in the word to be guessed
+* @param letter: {string}  - letter guessed
+*/
 function guessLetter(letter) {
     let isCorrect = false;
 
@@ -177,9 +189,11 @@ function guessLetter(letter) {
 
 
 
-//resets the game ready for a fresh start
-//this resets the score to 0
 
+/* Resets the score to 0 and updates the score.
+sets the value of 'score' variable to 0, 
+updates the score in the local storage to 0,
+updates score*/
 
 
 function reset() {
