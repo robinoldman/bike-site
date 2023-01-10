@@ -6,11 +6,11 @@
 
 ## ABOUT THE PROJECT
 
-Mountain hangman is an unreal project created for my PP2 with Code Institute. Mountain hangman is a website which is a simple hangman style game that can be played with an interactive keyboard.
+Mountain hangman is an unreal project created for my PP2  project with Code Institute. Mountain Hangman is a website which is a simple hangman style game that can be played with an interactive keyboard.
 
 ## ABOUT THE WEBSITE
 
-The Web site is a simple 1 page website that allows users to play the hangman game easily. It contains a hidden word, an tnt picture with a fuse that changes when a wrong letter is guessed and a an interactive keyboard.
+The Web site is a simple 1 page website that allows users to play the hangman game easily. It contains a hidden word, a tnt picture with a fuse that changes when a wrong letter is guessed and an interactive keyboard.
 
 ## INDEX
 
@@ -28,9 +28,9 @@ Deployment
 
 Credits
 
-USER EXPERIENCE
+User experience
 
-STRATEGY
+Strategy
 
 
 
@@ -60,7 +60,7 @@ to know when they have won
 
 a working keyboard
 a way of keeping score
-a way of knowing howm many guesses they have left
+a way of knowing how many guesses they have left
 a way to reset the whole game so they can play again
 
 
@@ -68,14 +68,14 @@ a way to reset the whole game so they can play again
 ## STRUCTURE
 
 The 1 page website contains: 
-simple instructions telling you how to play the game
-an image that changes everytime a wrong letter has been guesssed
-a word that has been ihidden by dashes that needs to be guessed
-a keyboard that reveals a correct letter in the dashes when it has ben pressed
-a score are that updates when a game has been won
-a mistakes score that updates everytime an incorrect letter has been guessed
-an alert message that appeas if you have won a game
-a loosing alert to tell you if you have lost a game
+* simple instructions telling you how to play the game
+* an image that changes everytime a wrong letter has been guesssed
+* a word that has been hidden by dashes that needs to be guessed
+* a keyboard that reveals a correct letter in the dashes when it has ben pressed
+* a score that updates when a game has been won
+* a mistakes score that updates everytime an incorrect letter has been guessed
+* an alert message that appeas if you have won a game
+* a loosing alert to tell you if you have lost a game
 
 
 
@@ -92,20 +92,19 @@ The font 'Indie Flower', was used for the main body of the web site. This font i
 
 Languages used:
 
-HTML5
-CSS
-JavaScript
+* HTML5
+* CSS
+* JavaScript
 
 Libraries and programs used:
 
-Google Fonts: Was used to import fonts
-Sweetalerts: to add design to the alerts
-Compress to go was used to compres large image sized
-Cloud convert used to convert jpeg files to webp files
-Git: Was used for version control by employing the Gitpod terminal to commit to Git and Push to GitHub.
-GitHub: Was used as the repository for the project's code after being pushed from Git.
-Formspree to link the website form to my email and receive the information that has been sent
-canva.com to create the tnt image
+* Google Fonts: Was used to import fonts
+* Sweetalerts: to add design to the alerts
+* Compress to go was used to compres large image sized
+* Cloud convert used to convert jpeg files to webp files
+* Git: Was used for version control by employing the Gitpod terminal to commit to Git and Push to GitHub.
+* GitHub: Was used as the repository for the project's code after being pushed from Git.
+* canva.com to create the tnt image
 
 ## FEATURES
 
@@ -117,12 +116,12 @@ This image consists of a tnt block with a fuse. I used a playful image that was 
 
 
 Mountain words
-These appear randomly  from an array of famous mountain words. 
+These appear randomly  from an array of famous mountain names. 
 The word is then hidden with dashes. Each dash represents a letter 
 
 
 Mistakes score
-this is updated by 1every time the player chooses a letter that is not in the word.
+this is updated by 1 every time the player chooses a letter that is not in the word.
 when the game is finished the mistakes score goes back to 0
 ![mistakes score](./assets/images/mistakes.png)
 
@@ -138,7 +137,7 @@ it resets the whole score and the mistakes button
 
 alerts
 A 'you've won' alert appears when the word has been correctly guesssed
-a'you've lost' alert appears when the player has not guessed the word in under 7 guesses. This alert is delayed my 2 seconds to allow the player the oppportunity to see the final 'explosion image'
+a 'you've lost' alert appears when the player has not guessed the word in under 7 guesses. This alert is delayed my 2 seconds to allow the player the oppportunity to see the final 'explosion image'
 
 ![alert](./assets/images/alert.png)
 
@@ -182,7 +181,7 @@ I used Lighthouse for testing: Performance, Best Practices, Accessibility, and S
 ![new lighthouse](./assets/images/loighthouse%20new.png)
 
 The game scored high on everyting apart from SEO it scored 84
-the issues were the gaps betwee nthe buttons and the website not containing meta data.
+the issues were the gaps between the buttons and the website not containing meta data.
 
 ## Testing grid
 
@@ -211,7 +210,7 @@ the issues were the gaps betwee nthe buttons and the website not containing meta
 
 During testing I realised that not all of the game was visible during the mobile view. I changed the breakpoint and the size of the font as well as the size of the refresh button.
 
-I also realised that the font was far to small for the desktop view and changed the size for a desktop.
+I also realised that the font was far too small for the desktop view and changed the size for a desktop.
 
 During the javascript validation I realised that I had not changed a function that I had renamed. I gave the function the appropriate name
 
@@ -221,7 +220,7 @@ During testing I realised that my buttons were too close together for a mobile. 
 
 During testing I realised that, although there were no commas between the dashes for the initial word, when a letter was guessed commas appeared. I changed the position of my.join to solve this.
 
-During testing my tnt images would change after 1 wrong guess. After this the images would stay the same. I realised the index++ variable was set as a local variable. I vhanged to global, which corrected the mistake. 
+During testing my tnt images would change after 1 wrong guess. After this the images would stay the same. I realised the index++ variable was set as a local variable. I changed to global, which corrected the mistake. 
 
 
 
